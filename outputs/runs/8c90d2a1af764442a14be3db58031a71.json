@@ -1,0 +1,641 @@
+{
+  "trace_id": "8c90d2a1af764442a14be3db58031a71",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PR IDProof.pdf",
+  "start_time": "2026-01-20T10:13:58Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PR IDProof.pdf",
+        "pages": [
+          {
+            "image_array": "[[[ 47  73 111]\n  [ 47  73 111]\n  [ 47  73 111]\n  ...\n  [170 183 187]\n  [170 183 187]\n  [170 183 187]]\n\n [[ 48  74 112]\n  [ 47  73 111]\n  [ 47  73 111]\n  ...\n  [171 185 189]\n  [170 183 187]\n  [170 183 187]]\n\n [[ 48  74 112]\n  [ 48  74 112]\n  [ 47  73 111]\n  ...\n  [171 185 189]\n  [171 185 189]\n  [171 185 189]]\n\n ...\n\n [[ 80  81 108]\n  [ 80  81 108]\n  [ 80  81 108]\n  ...\n  [ 95  91 110]\n  [ 95  91 110]\n  [ 95  91 110]]\n\n [[ 80  81 108]\n  [ 80  81 108]\n  [ 80  81 108]\n  ...\n  [ 95  91 110]\n  [ 95  91 110]\n  [ 95  91 110]]\n\n [[ 80  81 108]\n  [ 80  81 108]\n  [ 80  81 108]\n  ...\n  [ 94  91 112]\n  [ 94  91 112]\n  [ 94  91 112]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                840,
+                497
+              ],
+              "quality_score": 0.5565,
+              "enhancements_applied": [
+                "unsharp_mask",
+                "clahe",
+                "denoise"
+              ],
+              "processing_time": 2.1263,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 42.10806355665486,
+                "brightness_mean": 147.57139024623933,
+                "contrast_std": 26.69130172054877,
+                "blur_variance_post_sharpen": 58.649076299780276,
+                "contrast_std_post_clahe": 35.91240329639494,
+                "brightness_mean_post_denoise": 154.1018420044074,
+                "contrast_std_post_denoise": 35.08351500712405,
+                "blur_variance_final": 98.810765994695,
+                "brightness_mean_final": 154.1018420044074,
+                "contrast_std_final": 35.08351500712405
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\PR IDProof_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 840,
+            "height": 497,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 840.0,
+          "avg_height": 497.0
+        },
+        "timing": {
+          "elapsed_s": 2.914
+        }
+      },
+      "elapsed_s": 2.914,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9998171925544739,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PAN_5030b58c3a21",
+              "document_type": "pan",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "pan_card_front",
+                  "confidence": 0.9998171925544739,
+                  "processing_time": 1.4235235000014654,
+                  "document_type": "pan",
+                  "side": "single",
+                  "image_array": "[[[111  73  47]\n  [111  73  47]\n  [111  73  47]\n  ...\n  [187 183 170]\n  [187 183 170]\n  [187 183 170]]\n\n [[112  74  48]\n  [111  73  47]\n  [111  73  47]\n  ...\n  [189 185 171]\n  [187 183 170]\n  [187 183 170]]\n\n [[112  74  48]\n  [112  74  48]\n  [111  73  47]\n  ...\n  [189 185 171]\n  [189 185 171]\n  [189 185 171]]\n\n ...\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [110  91  95]\n  [110  91  95]\n  [110  91  95]]\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [110  91  95]\n  [110  91  95]\n  [110  91  95]]\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [112  91  94]\n  [112  91  94]\n  [112  91  94]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        840,
+                        497
+                      ],
+                      "quality_score": 0.5565,
+                      "enhancements_applied": [
+                        "unsharp_mask",
+                        "clahe",
+                        "denoise"
+                      ],
+                      "processing_time": 2.1263,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 42.10806355665486,
+                        "brightness_mean": 147.57139024623933,
+                        "contrast_std": 26.69130172054877,
+                        "blur_variance_post_sharpen": 58.649076299780276,
+                        "contrast_std_post_clahe": 35.91240329639494,
+                        "brightness_mean_post_denoise": 154.1018420044074,
+                        "contrast_std_post_denoise": 35.08351500712405,
+                        "blur_variance_final": 98.810765994695,
+                        "brightness_mean_final": 154.1018420044074,
+                        "contrast_std_final": 35.08351500712405
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.134
+          }
+        }
+      },
+      "elapsed_s": 4.135,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAN_5030b58c3a21",
+            "document_type": "pan",
+            "fields": {
+              "pan_number": "AAUPT0573F",
+              "name": "Suresh Narain Trivedi",
+              "fathers_name": "Laxmi Narain Trivedi",
+              "date_of_birth": "01/02/1948",
+              "signature_present": true
+            },
+            "confidences": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "pan_number": "AAUPT0573F",
+                "name": "Suresh Narain Trivedi",
+                "fathers_name": "Laxmi Narain Trivedi",
+                "date_of_birth": "01/02/1948",
+                "signature_present": true
+              },
+              "confidence_scores": {
+                "pan_number": 0.9,
+                "name": 0.9,
+                "fathers_name": 0.9,
+                "date_of_birth": 0.9,
+                "signature_present": 0.9
+              },
+              "completeness_score": 0.9,
+              "validation_errors": []
+            },
+            "completeness_score": 0.9,
+            "validation_errors": [],
+            "processing_metadata": {
+              "extraction_time": 19.0149,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 19.021
+        },
+        "debug": null
+      },
+      "elapsed_s": 19.102,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAN_5030b58c3a21",
+              "document_type": "pan",
+              "validation_status": "APPROVED",
+              "field_statuses": {
+                "pan_number": {
+                  "value": "AAUPT0573F",
+                  "normalized_value": "AAUPT0573F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "AAUPT0573F",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "01/02/1948",
+                  "normalized_value": "01/02/1948",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "01/02/1948",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "Suresh Narain Trivedi",
+                  "normalized_value": "Suresh Narain Trivedi",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Suresh Narain Trivedi",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "Laxmi Narain Trivedi",
+                  "normalized_value": "Laxmi Narain Trivedi",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Laxmi Narain Trivedi",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "pan_number": {
+                  "value": "AAUPT0573F",
+                  "normalized_value": "AAUPT0573F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "AAUPT0573F",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "01/02/1948",
+                  "normalized_value": "01/02/1948",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "01/02/1948",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "Suresh Narain Trivedi",
+                  "normalized_value": "Suresh Narain Trivedi",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Suresh Narain Trivedi",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "Laxmi Narain Trivedi",
+                  "normalized_value": "Laxmi Narain Trivedi",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Laxmi Narain Trivedi",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.005
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.005,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "15888149-abb7-47ff-adc3-38ebc63653e5",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.053
+        }
+      },
+      "elapsed_s": 0.053,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T10:14:24Z",
+  "timing": {
+    "elapsed_s": 26.225
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 840.0,
+        "avg_height": 497.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "pan_card_front",
+          "confidence": 0.9998171925544739,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PAN_5030b58c3a21",
+          "document_type": "pan",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9998171925544739,
+              "processing_time": 1.4235235000014654,
+              "document_type": "pan",
+              "side": "single",
+              "image_array": "[[[111  73  47]\n  [111  73  47]\n  [111  73  47]\n  ...\n  [187 183 170]\n  [187 183 170]\n  [187 183 170]]\n\n [[112  74  48]\n  [111  73  47]\n  [111  73  47]\n  ...\n  [189 185 171]\n  [187 183 170]\n  [187 183 170]]\n\n [[112  74  48]\n  [112  74  48]\n  [111  73  47]\n  ...\n  [189 185 171]\n  [189 185 171]\n  [189 185 171]]\n\n ...\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [110  91  95]\n  [110  91  95]\n  [110  91  95]]\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [110  91  95]\n  [110  91  95]\n  [110  91  95]]\n\n [[108  81  80]\n  [108  81  80]\n  [108  81  80]\n  ...\n  [112  91  94]\n  [112  91  94]\n  [112  91  94]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    840,
+                    497
+                  ],
+                  "quality_score": 0.5565,
+                  "enhancements_applied": [
+                    "unsharp_mask",
+                    "clahe",
+                    "denoise"
+                  ],
+                  "processing_time": 2.1263,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 42.10806355665486,
+                    "brightness_mean": 147.57139024623933,
+                    "contrast_std": 26.69130172054877,
+                    "blur_variance_post_sharpen": 58.649076299780276,
+                    "contrast_std_post_clahe": 35.91240329639494,
+                    "brightness_mean_post_denoise": 154.1018420044074,
+                    "contrast_std_post_denoise": 35.08351500712405,
+                    "blur_variance_final": 98.810765994695,
+                    "brightness_mean_final": 154.1018420044074,
+                    "contrast_std_final": 35.08351500712405
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.134
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PAN_5030b58c3a21",
+          "document_type": "pan",
+          "fields": {
+            "pan_number": "AAUPT0573F",
+            "name": "Suresh Narain Trivedi",
+            "fathers_name": "Laxmi Narain Trivedi",
+            "date_of_birth": "01/02/1948",
+            "signature_present": true
+          },
+          "confidences": {
+            "pan_number": 0.9,
+            "name": 0.9,
+            "fathers_name": 0.9,
+            "date_of_birth": 0.9,
+            "signature_present": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "pan_number": "AAUPT0573F",
+              "name": "Suresh Narain Trivedi",
+              "fathers_name": "Laxmi Narain Trivedi",
+              "date_of_birth": "01/02/1948",
+              "signature_present": true
+            },
+            "confidence_scores": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "completeness_score": 0.9,
+            "validation_errors": []
+          },
+          "completeness_score": 0.9,
+          "validation_errors": [],
+          "processing_metadata": {
+            "extraction_time": 19.0149,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 19.021
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PAN_5030b58c3a21",
+            "document_type": "pan",
+            "validation_status": "APPROVED",
+            "field_statuses": {
+              "pan_number": {
+                "value": "AAUPT0573F",
+                "normalized_value": "AAUPT0573F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "AAUPT0573F",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "01/02/1948",
+                "normalized_value": "01/02/1948",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "01/02/1948",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "Suresh Narain Trivedi",
+                "normalized_value": "Suresh Narain Trivedi",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Suresh Narain Trivedi",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "Laxmi Narain Trivedi",
+                "normalized_value": "Laxmi Narain Trivedi",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Laxmi Narain Trivedi",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "pan_number": {
+                "value": "AAUPT0573F",
+                "normalized_value": "AAUPT0573F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "AAUPT0573F",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "01/02/1948",
+                "normalized_value": "01/02/1948",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "01/02/1948",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "Suresh Narain Trivedi",
+                "normalized_value": "Suresh Narain Trivedi",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Suresh Narain Trivedi",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "Laxmi Narain Trivedi",
+                "normalized_value": "Laxmi Narain Trivedi",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Laxmi Narain Trivedi",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.005
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "15888149-abb7-47ff-adc3-38ebc63653e5",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.053
+      }
+    }
+  }
+}

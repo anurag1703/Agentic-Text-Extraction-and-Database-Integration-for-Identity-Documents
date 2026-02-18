@@ -1,0 +1,653 @@
+{
+  "trace_id": "72afe62c0e444d8fae1440ebef69cd3f",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\IW1074879 LA AgeProof.pdf",
+  "start_time": "2026-01-20T10:21:47Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\IW1074879 LA AgeProof.pdf",
+        "pages": [
+          {
+            "image_array": "[[[0 0 0]\n  [0 0 0]\n  [5 4 4]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [5 4 4]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [5 4 4]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [0 0 2]\n  [0 0 2]\n  [0 0 2]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [0 0 2]\n  [0 0 2]\n  [0 0 2]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [0 0 2]\n  [0 0 2]\n  [0 0 2]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                758
+              ],
+              "quality_score": 0.8962,
+              "enhancements_applied": [
+                "cropped_padding_(0, 415, 1007, 1775)",
+                "rotated_90_ccw",
+                "resized_to_1024x758"
+              ],
+              "processing_time": 0.367,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 3178.279380360809,
+                "brightness_mean": 157.89937154724603,
+                "contrast_std": 38.476814244325325,
+                "blur_variance_final": 3178.279380360809,
+                "brightness_mean_final": 157.89937154724603,
+                "contrast_std_final": 38.476814244325325
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\IW1074879 LA AgeProof_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 758,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 758.0
+        },
+        "timing": {
+          "elapsed_s": 1.32
+        }
+      },
+      "elapsed_s": 1.321,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.7918215394020081,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PAN_be3cf03c9b5b",
+              "document_type": "pan",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "pan_card_front",
+                  "confidence": 0.7918215394020081,
+                  "processing_time": 1.5112684999985504,
+                  "document_type": "pan",
+                  "side": "single",
+                  "image_array": "[[[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        758
+                      ],
+                      "quality_score": 0.8962,
+                      "enhancements_applied": [
+                        "cropped_padding_(0, 415, 1007, 1775)",
+                        "rotated_90_ccw",
+                        "resized_to_1024x758"
+                      ],
+                      "processing_time": 0.367,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 3178.279380360809,
+                        "brightness_mean": 157.89937154724603,
+                        "contrast_std": 38.476814244325325,
+                        "blur_variance_final": 3178.279380360809,
+                        "brightness_mean_final": 157.89937154724603,
+                        "contrast_std_final": 38.476814244325325
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 5.532
+          }
+        }
+      },
+      "elapsed_s": 5.533,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAN_be3cf03c9b5b",
+            "document_type": "pan",
+            "fields": {
+              "pan_number": null,
+              "name": "SARAVANAN KUMAR",
+              "fathers_name": "CHANDRAKUMARAN THARAN",
+              "date_of_birth": "25/01/1974",
+              "signature_present": null
+            },
+            "confidences": {
+              "pan_number": 0.6,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.0
+            },
+            "extracted_data": {
+              "fields": {
+                "pan_number": null,
+                "name": "SARAVANAN KUMAR",
+                "fathers_name": "CHANDRAKUMARAN THARAN",
+                "date_of_birth": "25/01/1974",
+                "signature_present": null
+              },
+              "confidence_scores": {
+                "pan_number": 0.6,
+                "name": 0.9,
+                "fathers_name": 0.9,
+                "date_of_birth": 0.9,
+                "signature_present": 0.0
+              },
+              "completeness_score": 0.66,
+              "validation_errors": [
+                "overall_confidence_below_threshold",
+                "signature_present_invalid_or_missing",
+                "pan_number_invalid_or_missing"
+              ]
+            },
+            "completeness_score": 0.66,
+            "validation_errors": [
+              "overall_confidence_below_threshold",
+              "signature_present_invalid_or_missing",
+              "pan_number_invalid_or_missing"
+            ],
+            "processing_metadata": {
+              "extraction_time": 27.1812,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 27.189
+        },
+        "debug": null
+      },
+      "elapsed_s": 27.19,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAN_be3cf03c9b5b",
+              "document_type": "pan",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {
+                "pan_number": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.6,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [
+                    "pan_missing"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.6
+                },
+                "date_of_birth": {
+                  "value": "25/01/1974",
+                  "normalized_value": "25/01/1974",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "25/01/1974",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": null,
+                  "normalized_value": false,
+                  "status": "VALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "name": {
+                  "value": "SARAVANAN KUMAR",
+                  "normalized_value": "SARAVANAN KUMAR",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SARAVANAN KUMAR",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "CHANDRAKUMARAN THARAN",
+                  "normalized_value": "CHANDRAKUMARAN THARAN",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "CHANDRAKUMARAN THARAN",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "pan_number": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.6,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [
+                    "pan_missing"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.6
+                },
+                "date_of_birth": {
+                  "value": "25/01/1974",
+                  "normalized_value": "25/01/1974",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "25/01/1974",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": null,
+                  "normalized_value": false,
+                  "status": "VALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "name": {
+                  "value": "SARAVANAN KUMAR",
+                  "normalized_value": "SARAVANAN KUMAR",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SARAVANAN KUMAR",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "CHANDRAKUMARAN THARAN",
+                  "normalized_value": "CHANDRAKUMARAN THARAN",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "CHANDRAKUMARAN THARAN",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.002,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "60411a58-75d2-4276-9d7c-cbc93ca75189",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.126
+        }
+      },
+      "elapsed_s": 0.126,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T10:22:21Z",
+  "timing": {
+    "elapsed_s": 34.195
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 758.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "pan_card_front",
+          "confidence": 0.7918215394020081,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PAN_be3cf03c9b5b",
+          "document_type": "pan",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.7918215394020081,
+              "processing_time": 1.5112684999985504,
+              "document_type": "pan",
+              "side": "single",
+              "image_array": "[[[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 5]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [4 4 4]\n  ...\n  [2 0 0]\n  [2 0 0]\n  [2 0 0]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    758
+                  ],
+                  "quality_score": 0.8962,
+                  "enhancements_applied": [
+                    "cropped_padding_(0, 415, 1007, 1775)",
+                    "rotated_90_ccw",
+                    "resized_to_1024x758"
+                  ],
+                  "processing_time": 0.367,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 3178.279380360809,
+                    "brightness_mean": 157.89937154724603,
+                    "contrast_std": 38.476814244325325,
+                    "blur_variance_final": 3178.279380360809,
+                    "brightness_mean_final": 157.89937154724603,
+                    "contrast_std_final": 38.476814244325325
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 5.532
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PAN_be3cf03c9b5b",
+          "document_type": "pan",
+          "fields": {
+            "pan_number": null,
+            "name": "SARAVANAN KUMAR",
+            "fathers_name": "CHANDRAKUMARAN THARAN",
+            "date_of_birth": "25/01/1974",
+            "signature_present": null
+          },
+          "confidences": {
+            "pan_number": 0.6,
+            "name": 0.9,
+            "fathers_name": 0.9,
+            "date_of_birth": 0.9,
+            "signature_present": 0.0
+          },
+          "extracted_data": {
+            "fields": {
+              "pan_number": null,
+              "name": "SARAVANAN KUMAR",
+              "fathers_name": "CHANDRAKUMARAN THARAN",
+              "date_of_birth": "25/01/1974",
+              "signature_present": null
+            },
+            "confidence_scores": {
+              "pan_number": 0.6,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.0
+            },
+            "completeness_score": 0.66,
+            "validation_errors": [
+              "overall_confidence_below_threshold",
+              "signature_present_invalid_or_missing",
+              "pan_number_invalid_or_missing"
+            ]
+          },
+          "completeness_score": 0.66,
+          "validation_errors": [
+            "overall_confidence_below_threshold",
+            "signature_present_invalid_or_missing",
+            "pan_number_invalid_or_missing"
+          ],
+          "processing_metadata": {
+            "extraction_time": 27.1812,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 27.189
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PAN_be3cf03c9b5b",
+            "document_type": "pan",
+            "validation_status": "REVIEW_REQUIRED",
+            "field_statuses": {
+              "pan_number": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.6,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [
+                  "pan_missing"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.6
+              },
+              "date_of_birth": {
+                "value": "25/01/1974",
+                "normalized_value": "25/01/1974",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "25/01/1974",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": null,
+                "normalized_value": false,
+                "status": "VALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "name": {
+                "value": "SARAVANAN KUMAR",
+                "normalized_value": "SARAVANAN KUMAR",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SARAVANAN KUMAR",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "CHANDRAKUMARAN THARAN",
+                "normalized_value": "CHANDRAKUMARAN THARAN",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "CHANDRAKUMARAN THARAN",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "pan_number": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.6,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [
+                  "pan_missing"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.6
+              },
+              "date_of_birth": {
+                "value": "25/01/1974",
+                "normalized_value": "25/01/1974",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "25/01/1974",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": null,
+                "normalized_value": false,
+                "status": "VALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "name": {
+                "value": "SARAVANAN KUMAR",
+                "normalized_value": "SARAVANAN KUMAR",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SARAVANAN KUMAR",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "CHANDRAKUMARAN THARAN",
+                "normalized_value": "CHANDRAKUMARAN THARAN",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "CHANDRAKUMARAN THARAN",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.002
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "60411a58-75d2-4276-9d7c-cbc93ca75189",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.126
+      }
+    }
+  }
+}

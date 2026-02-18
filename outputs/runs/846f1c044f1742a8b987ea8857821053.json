@@ -1,0 +1,169 @@
+{
+  "trace_id": "846f1c044f1742a8b987ea8857821053",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\IBW106481 LA AgeProof.pdf",
+  "start_time": "2026-01-20T10:23:42Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\IBW106481 LA AgeProof.pdf",
+        "pages": [
+          {
+            "image_array": "[[[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n ...\n\n [[246 242 241]\n  [246 242 241]\n  [249 245 244]\n  ...\n  [ 42  86  35]\n  [ 52  95  43]\n  [ 61 106  51]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [ 50  92  38]\n  [ 56  99  46]\n  [ 59 104  49]]\n\n [[245 246 248]\n  [247 248 250]\n  [251 252 253]\n  ...\n  [ 25  67  15]\n  [ 36  78  25]\n  [ 48  89  34]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                694
+              ],
+              "quality_score": 0.6468,
+              "enhancements_applied": [
+                "rotated_90_ccw",
+                "resized_to_1024x694",
+                "clahe"
+              ],
+              "processing_time": 0.3504,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 532.1777085604411,
+                "brightness_mean": 247.87841937590056,
+                "contrast_std": 22.483997546153706,
+                "contrast_std_post_clahe": 31.424021380269473,
+                "blur_variance_final": 1026.3018595667097,
+                "brightness_mean_final": 242.4627653885987,
+                "contrast_std_final": 31.424021380269473
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\IBW106481 LA AgeProof_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 694,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 694.0
+        },
+        "timing": {
+          "elapsed_s": 1.151
+        }
+      },
+      "elapsed_s": 1.152,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "rejected",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "unknown",
+              "confidence": 0.0,
+              "bbox": null
+            }
+          ],
+          "documents": [],
+          "timing": {
+            "elapsed_s": 4.115
+          }
+        }
+      },
+      "elapsed_s": 4.116,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAGE_NA",
+            "document_type": "unknown",
+            "fields": {},
+            "confidences": {},
+            "extracted_data": {
+              "fields": {},
+              "confidence_scores": {},
+              "completeness_score": 0.0,
+              "validation_errors": [
+                "Page missing 'image_array'",
+                "overall_confidence_below_threshold"
+              ]
+            },
+            "completeness_score": 0.0,
+            "validation_errors": [
+              "Page missing 'image_array'",
+              "overall_confidence_below_threshold"
+            ],
+            "processing_metadata": {
+              "extraction_time": 0.0,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.007
+        },
+        "debug": null
+      },
+      "elapsed_s": 0.008,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAGE_NA",
+              "document_type": "unknown",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {},
+              "validated_fields": {}
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.002,
+      "attempts": 1
+    },
+    "store": {
+      "success": false,
+      "error": "failed",
+      "elapsed_s": null,
+      "attempts": 3
+    }
+  },
+  "errors": [
+    {
+      "stage": "store",
+      "error": "failed"
+    }
+  ],
+  "status": "failed",
+  "end_time": "2026-01-20T10:23:50Z"
+}

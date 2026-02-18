@@ -1,0 +1,166 @@
+{
+  "trace_id": "4d818a065ec440c7ae822bd7e0174d85",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PROPOSER AgeProof.pdf",
+  "start_time": "2026-01-20T10:09:49Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PROPOSER AgeProof.pdf",
+        "pages": [
+          {
+            "image_array": "[[[191 173 153]\n  [189 171 151]\n  [190 170 150]\n  ...\n  [185 172 156]\n  [187 170 155]\n  [191 170 156]]\n\n [[188 171 151]\n  [189 171 151]\n  [193 173 151]\n  ...\n  [155 144 133]\n  [164 149 135]\n  [172 154 138]]\n\n [[190 173 154]\n  [192 175 154]\n  [195 177 155]\n  ...\n  [126 120 112]\n  [121 111 100]\n  [136 123 108]]\n\n ...\n\n [[213 208 204]\n  [213 208 204]\n  [212 207 203]\n  ...\n  [169 149 123]\n  [168 149 123]\n  [168 149 125]]\n\n [[211 206 202]\n  [213 208 204]\n  [213 208 204]\n  ...\n  [167 147 120]\n  [168 148 121]\n  [169 149 123]]\n\n [[210 205 201]\n  [212 207 203]\n  [213 208 204]\n  ...\n  [169 147 121]\n  [169 148 121]\n  [169 148 120]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                701
+              ],
+              "quality_score": 0.7142,
+              "enhancements_applied": [
+                "resized_to_1024x701"
+              ],
+              "processing_time": 0.4716,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 208.602562669371,
+                "brightness_mean": 173.63909398404067,
+                "contrast_std": 49.55758227641864,
+                "blur_variance_final": 208.602562669371,
+                "brightness_mean_final": 173.63909398404067,
+                "contrast_std_final": 49.55758227641864
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\PROPOSER AgeProof_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 701,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 701.0
+        },
+        "timing": {
+          "elapsed_s": 1.734
+        }
+      },
+      "elapsed_s": 1.734,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "rejected",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "unknown",
+              "confidence": 0.0,
+              "bbox": null
+            }
+          ],
+          "documents": [],
+          "timing": {
+            "elapsed_s": 4.137
+          }
+        }
+      },
+      "elapsed_s": 4.138,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAGE_NA",
+            "document_type": "unknown",
+            "fields": {},
+            "confidences": {},
+            "extracted_data": {
+              "fields": {},
+              "confidence_scores": {},
+              "completeness_score": 0.0,
+              "validation_errors": [
+                "overall_confidence_below_threshold",
+                "Page missing 'image_array'"
+              ]
+            },
+            "completeness_score": 0.0,
+            "validation_errors": [
+              "overall_confidence_below_threshold",
+              "Page missing 'image_array'"
+            ],
+            "processing_metadata": {
+              "extraction_time": 0.0,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.007
+        },
+        "debug": null
+      },
+      "elapsed_s": 0.007,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAGE_NA",
+              "document_type": "unknown",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {},
+              "validated_fields": {}
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.002,
+      "attempts": 1
+    },
+    "store": {
+      "success": false,
+      "error": "failed",
+      "elapsed_s": null,
+      "attempts": 3
+    }
+  },
+  "errors": [
+    {
+      "stage": "store",
+      "error": "failed"
+    }
+  ],
+  "status": "failed",
+  "end_time": "2026-01-20T10:09:58Z"
+}

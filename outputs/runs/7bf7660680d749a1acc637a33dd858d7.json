@@ -1,0 +1,21 @@
+{
+  "trace_id": "7bf7660680d749a1acc637a33dd858d7",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\id_docs\\PR IDProof.jpg",
+  "start_time": "2026-01-20T09:42:39Z",
+  "stages": {
+    "preprocess": {
+      "success": false,
+      "error": "preprocessor_error: Only PDF files are accepted",
+      "elapsed_s": null,
+      "attempts": 3
+    }
+  },
+  "errors": [
+    {
+      "stage": "preprocess",
+      "error": "preprocessor_error: Only PDF files are accepted"
+    }
+  ],
+  "status": "failed",
+  "end_time": "2026-01-20T09:42:45Z"
+}

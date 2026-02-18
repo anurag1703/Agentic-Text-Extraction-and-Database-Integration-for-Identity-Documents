@@ -1,0 +1,21 @@
+{
+  "trace_id": "887726f0e50f4a278d6fd5b7835b87c7",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\anurag_aadhar.pdf",
+  "start_time": "2026-01-20T06:59:21Z",
+  "stages": {
+    "preprocess": {
+      "success": false,
+      "error": "preprocessor_error: Failed to convert PDF to images: Unable to get page count. Is poppler installed and in PATH?",
+      "elapsed_s": null,
+      "attempts": 3
+    }
+  },
+  "errors": [
+    {
+      "stage": "preprocess",
+      "error": "preprocessor_error: Failed to convert PDF to images: Unable to get page count. Is poppler installed and in PATH?"
+    }
+  ],
+  "status": "failed",
+  "end_time": "2026-01-20T06:59:27Z"
+}

@@ -1,0 +1,885 @@
+{
+  "trace_id": "c314915a9b724cd4aee8843b4462c735",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\aadhar2.pdf",
+  "start_time": "2026-02-02T11:12:22Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\aadhar2.pdf",
+        "pages": [
+          {
+            "image_array": "[[[ 37   8  10]\n  [ 37   8  10]\n  [ 37   8  10]\n  ...\n  [ 66  19  16]\n  [ 66  18  16]\n  [ 66  18  16]]\n\n [[ 37   8  10]\n  [ 37   8  10]\n  [ 37   8  10]\n  ...\n  [ 66  19  16]\n  [ 67  19  16]\n  [ 66  18  16]]\n\n [[ 37   8  11]\n  [ 37   8  11]\n  [ 36   8  11]\n  ...\n  [ 67  20  16]\n  [ 66  19  16]\n  [ 67  19  16]]\n\n ...\n\n [[ 90  14  20]\n  [ 90  14  20]\n  [ 90  14  20]\n  ...\n  [179 169 160]\n  [179 169 160]\n  [179 169 160]]\n\n [[ 90  14  20]\n  [ 89  14  20]\n  [ 89  14  20]\n  ...\n  [179 169 160]\n  [179 169 160]\n  [179 169 160]]\n\n [[ 90  14  20]\n  [ 89  14  20]\n  [ 89  14  20]\n  ...\n  [179 169 160]\n  [179 169 160]\n  [179 169 160]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                771
+              ],
+              "quality_score": 0.7671,
+              "enhancements_applied": [
+                "resized_to_1024x771",
+                "denoise"
+              ],
+              "processing_time": 9.9751,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 228.12791525763808,
+                "brightness_mean": 162.06075586697472,
+                "contrast_std": 74.33968498714317,
+                "brightness_mean_post_denoise": 161.97928066228923,
+                "contrast_std_post_denoise": 74.5489663655229,
+                "blur_variance_final": 197.87009866962217,
+                "brightness_mean_final": 161.97928066228923,
+                "contrast_std_final": 74.5489663655229
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\aadhar2_page_1.png"
+          },
+          {
+            "image_array": "[[[ 42   8  13]\n  [ 42   8  13]\n  [ 42   8  13]\n  ...\n  [121  92  80]\n  [121  92  80]\n  [121  92  80]]\n\n [[ 42   8  13]\n  [ 42   8  13]\n  [ 42   8  13]\n  ...\n  [121  92  80]\n  [121  92  80]\n  [121  92  80]]\n\n [[ 42   8  13]\n  [ 42   8  13]\n  [ 42   8  13]\n  ...\n  [121  92  80]\n  [121  92  80]\n  [121  92  80]]\n\n ...\n\n [[ 69  13  21]\n  [ 69  13  21]\n  [ 69  13  21]\n  ...\n  [ 95  29  38]\n  [ 95  29  38]\n  [ 94  28  37]]\n\n [[ 69  13  21]\n  [ 69  13  21]\n  [ 69  13  21]\n  ...\n  [ 95  29  38]\n  [ 95  29  38]\n  [ 94  28  37]]\n\n [[ 69  13  21]\n  [ 69  13  21]\n  [ 69  13  21]\n  ...\n  [ 95  29  38]\n  [ 95  29  38]\n  [ 95  29  38]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                771
+              ],
+              "quality_score": 0.9649,
+              "enhancements_applied": [
+                "resized_to_1024x771",
+                "denoise"
+              ],
+              "processing_time": 9.7364,
+              "page_number": 2,
+              "raw_quality_metrics": {
+                "blur_variance": 1419.9802512534784,
+                "brightness_mean": 155.29203778574902,
+                "contrast_std": 66.82298273982379,
+                "brightness_mean_post_denoise": 155.3122023447633,
+                "contrast_std_post_denoise": 66.95401503837353,
+                "blur_variance_final": 1273.3007026873327,
+                "brightness_mean_final": 155.3122023447633,
+                "contrast_std_final": 66.95401503837353
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\aadhar2_page_2.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 771,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          },
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 771,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 2,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 771.0
+        },
+        "timing": {
+          "elapsed_s": 77.6
+        }
+      },
+      "elapsed_s": 77.601,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "aadhar_front",
+              "confidence": 1.0,
+              "bbox": null
+            },
+            {
+              "page_index": null,
+              "predicted_class": "aadhar_back",
+              "confidence": 0.9999887943267822,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "AADHAR_c3a1f34eb48b",
+              "document_type": "aadhar",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "aadhar_front",
+                  "confidence": 1.0,
+                  "processing_time": 1.2730904499985627,
+                  "document_type": "aadhar",
+                  "side": "front",
+                  "image_array": "[[[ 10   8  37]\n  [ 10   8  37]\n  [ 10   8  37]\n  ...\n  [ 16  19  66]\n  [ 16  18  66]\n  [ 16  18  66]]\n\n [[ 10   8  37]\n  [ 10   8  37]\n  [ 10   8  37]\n  ...\n  [ 16  19  66]\n  [ 16  19  67]\n  [ 16  18  66]]\n\n [[ 11   8  37]\n  [ 11   8  37]\n  [ 11   8  36]\n  ...\n  [ 16  20  67]\n  [ 16  19  66]\n  [ 16  19  67]]\n\n ...\n\n [[ 20  14  90]\n  [ 20  14  90]\n  [ 20  14  90]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]\n\n [[ 20  14  90]\n  [ 20  14  89]\n  [ 20  14  89]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]\n\n [[ 20  14  90]\n  [ 20  14  89]\n  [ 20  14  89]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        771
+                      ],
+                      "quality_score": 0.7671,
+                      "enhancements_applied": [
+                        "resized_to_1024x771",
+                        "denoise"
+                      ],
+                      "processing_time": 9.9751,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 228.12791525763808,
+                        "brightness_mean": 162.06075586697472,
+                        "contrast_std": 74.33968498714317,
+                        "brightness_mean_post_denoise": 161.97928066228923,
+                        "contrast_std_post_denoise": 74.5489663655229,
+                        "blur_variance_final": 197.87009866962217,
+                        "brightness_mean_final": 161.97928066228923,
+                        "contrast_std_final": 74.5489663655229
+                      }
+                    }
+                  },
+                  "_trusted": true
+                },
+                {
+                  "page_number": -1,
+                  "predicted_class": "aadhar_back",
+                  "confidence": 0.9999887943267822,
+                  "processing_time": 1.2730904499985627,
+                  "document_type": "aadhar",
+                  "side": "back",
+                  "image_array": "[[[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n [[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n [[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n ...\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 37  28  94]]\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 37  28  94]]\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 38  29  95]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        771
+                      ],
+                      "quality_score": 0.9649,
+                      "enhancements_applied": [
+                        "resized_to_1024x771",
+                        "denoise"
+                      ],
+                      "processing_time": 9.7364,
+                      "page_number": 2,
+                      "raw_quality_metrics": {
+                        "blur_variance": 1419.9802512534784,
+                        "brightness_mean": 155.29203778574902,
+                        "contrast_std": 66.82298273982379,
+                        "brightness_mean_post_denoise": 155.3122023447633,
+                        "contrast_std_post_denoise": 66.95401503837353,
+                        "blur_variance_final": 1273.3007026873327,
+                        "brightness_mean_final": 155.3122023447633,
+                        "contrast_std_final": 66.95401503837353
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 5.177
+          }
+        }
+      },
+      "elapsed_s": 5.178,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "AADHAR_c3a1f34eb48b",
+            "document_type": "aadhar",
+            "fields": {
+              "uid_number": "4228 8306 1159",
+              "name": "Anurag Kaushik",
+              "date_of_birth": "17/03/2003",
+              "gender": "MALE",
+              "address": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+              "pin_code": "249403",
+              "state": "Uttarakhand"
+            },
+            "confidences": {
+              "uid_number": 0.9,
+              "name": 0.9,
+              "date_of_birth": 0.9,
+              "gender": 0.4,
+              "address": 0.9,
+              "pin_code": 0.9,
+              "state": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "uid_number": "4228 8306 1159",
+                "name": "Anurag Kaushik",
+                "date_of_birth": "17/03/2003",
+                "gender": "MALE",
+                "address": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "pin_code": "249403",
+                "state": "Uttarakhand"
+              },
+              "confidence_scores": {
+                "uid_number": 0.9,
+                "name": 0.9,
+                "date_of_birth": 0.9,
+                "gender": 0.4,
+                "address": 0.9,
+                "pin_code": 0.9,
+                "state": 0.9
+              },
+              "completeness_score": 0.8375,
+              "validation_errors": [
+                "gender_invalid_or_missing"
+              ]
+            },
+            "completeness_score": 0.8375,
+            "validation_errors": [
+              "gender_invalid_or_missing"
+            ],
+            "processing_metadata": {
+              "extraction_time": 50.9997,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 33.734
+        },
+        "debug": null
+      },
+      "elapsed_s": 33.773,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "AADHAR_c3a1f34eb48b",
+              "document_type": "aadhar",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {
+                "uid_number": {
+                  "value": "4228 8306 1159",
+                  "normalized_value": "422883061159",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "12digits",
+                    "verhoeff",
+                    "non_sequential"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "4228 8306 1159",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/03/2003",
+                  "normalized_value": "17/03/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/03/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "MALE",
+                  "normalized_value": "MALE",
+                  "status": "VALID",
+                  "confidence": 0.4,
+                  "validation_rules": [
+                    "allowed_values:MALE/FEMALE/OTHER"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "MALE",
+                  "original_extracted_confidence": 0.4
+                },
+                "pin_code": {
+                  "value": "249403",
+                  "normalized_value": "249403",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "6digits",
+                    "first_digit_not_zero",
+                    "pin_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "249403",
+                  "original_extracted_confidence": 0.9
+                },
+                "state": {
+                  "value": "Uttarakhand",
+                  "normalized_value": "Uttarakhand",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "state_list_normalize"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "Uttarakhand",
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "Anurag Kaushik",
+                  "normalized_value": "Anurag Kaushik",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Anurag Kaushik",
+                  "original_extracted_confidence": 0.9
+                },
+                "address": {
+                  "value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "normalized_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "uid_number": {
+                  "value": "4228 8306 1159",
+                  "normalized_value": "422883061159",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "12digits",
+                    "verhoeff",
+                    "non_sequential"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "4228 8306 1159",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/03/2003",
+                  "normalized_value": "17/03/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/03/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "MALE",
+                  "normalized_value": "MALE",
+                  "status": "VALID",
+                  "confidence": 0.4,
+                  "validation_rules": [
+                    "allowed_values:MALE/FEMALE/OTHER"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "MALE",
+                  "original_extracted_confidence": 0.4
+                },
+                "pin_code": {
+                  "value": "249403",
+                  "normalized_value": "249403",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "6digits",
+                    "first_digit_not_zero",
+                    "pin_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "249403",
+                  "original_extracted_confidence": 0.9
+                },
+                "state": {
+                  "value": "Uttarakhand",
+                  "normalized_value": "Uttarakhand",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "state_list_normalize"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "Uttarakhand",
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "Anurag Kaushik",
+                  "normalized_value": "Anurag Kaushik",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Anurag Kaushik",
+                  "original_extracted_confidence": 0.9
+                },
+                "address": {
+                  "value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "normalized_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.003
+          },
+          "errors": null
+        },
+        "has_review": false
+      },
+      "elapsed_s": 0.003,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "ff38c5b6-7e67-40e8-ab6c-55d1ff0821aa",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.043
+        }
+      },
+      "elapsed_s": 0.043,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-02-02T11:14:19Z",
+  "timing": {
+    "elapsed_s": 116.69
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 2,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 771.0
+      },
+      "num_pages": 2
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "aadhar_front",
+          "confidence": 1.0,
+          "bbox": null
+        },
+        {
+          "page_index": null,
+          "predicted_class": "aadhar_back",
+          "confidence": 0.9999887943267822,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "AADHAR_c3a1f34eb48b",
+          "document_type": "aadhar",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "aadhar_front",
+              "confidence": 1.0,
+              "processing_time": 1.2730904499985627,
+              "document_type": "aadhar",
+              "side": "front",
+              "image_array": "[[[ 10   8  37]\n  [ 10   8  37]\n  [ 10   8  37]\n  ...\n  [ 16  19  66]\n  [ 16  18  66]\n  [ 16  18  66]]\n\n [[ 10   8  37]\n  [ 10   8  37]\n  [ 10   8  37]\n  ...\n  [ 16  19  66]\n  [ 16  19  67]\n  [ 16  18  66]]\n\n [[ 11   8  37]\n  [ 11   8  37]\n  [ 11   8  36]\n  ...\n  [ 16  20  67]\n  [ 16  19  66]\n  [ 16  19  67]]\n\n ...\n\n [[ 20  14  90]\n  [ 20  14  90]\n  [ 20  14  90]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]\n\n [[ 20  14  90]\n  [ 20  14  89]\n  [ 20  14  89]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]\n\n [[ 20  14  90]\n  [ 20  14  89]\n  [ 20  14  89]\n  ...\n  [160 169 179]\n  [160 169 179]\n  [160 169 179]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    771
+                  ],
+                  "quality_score": 0.7671,
+                  "enhancements_applied": [
+                    "resized_to_1024x771",
+                    "denoise"
+                  ],
+                  "processing_time": 9.9751,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 228.12791525763808,
+                    "brightness_mean": 162.06075586697472,
+                    "contrast_std": 74.33968498714317,
+                    "brightness_mean_post_denoise": 161.97928066228923,
+                    "contrast_std_post_denoise": 74.5489663655229,
+                    "blur_variance_final": 197.87009866962217,
+                    "brightness_mean_final": 161.97928066228923,
+                    "contrast_std_final": 74.5489663655229
+                  }
+                }
+              },
+              "_trusted": true
+            },
+            {
+              "page_number": -1,
+              "predicted_class": "aadhar_back",
+              "confidence": 0.9999887943267822,
+              "processing_time": 1.2730904499985627,
+              "document_type": "aadhar",
+              "side": "back",
+              "image_array": "[[[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n [[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n [[ 13   8  42]\n  [ 13   8  42]\n  [ 13   8  42]\n  ...\n  [ 80  92 121]\n  [ 80  92 121]\n  [ 80  92 121]]\n\n ...\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 37  28  94]]\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 37  28  94]]\n\n [[ 21  13  69]\n  [ 21  13  69]\n  [ 21  13  69]\n  ...\n  [ 38  29  95]\n  [ 38  29  95]\n  [ 38  29  95]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    771
+                  ],
+                  "quality_score": 0.9649,
+                  "enhancements_applied": [
+                    "resized_to_1024x771",
+                    "denoise"
+                  ],
+                  "processing_time": 9.7364,
+                  "page_number": 2,
+                  "raw_quality_metrics": {
+                    "blur_variance": 1419.9802512534784,
+                    "brightness_mean": 155.29203778574902,
+                    "contrast_std": 66.82298273982379,
+                    "brightness_mean_post_denoise": 155.3122023447633,
+                    "contrast_std_post_denoise": 66.95401503837353,
+                    "blur_variance_final": 1273.3007026873327,
+                    "brightness_mean_final": 155.3122023447633,
+                    "contrast_std_final": 66.95401503837353
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 5.177
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "AADHAR_c3a1f34eb48b",
+          "document_type": "aadhar",
+          "fields": {
+            "uid_number": "4228 8306 1159",
+            "name": "Anurag Kaushik",
+            "date_of_birth": "17/03/2003",
+            "gender": "MALE",
+            "address": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+            "pin_code": "249403",
+            "state": "Uttarakhand"
+          },
+          "confidences": {
+            "uid_number": 0.9,
+            "name": 0.9,
+            "date_of_birth": 0.9,
+            "gender": 0.4,
+            "address": 0.9,
+            "pin_code": 0.9,
+            "state": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "uid_number": "4228 8306 1159",
+              "name": "Anurag Kaushik",
+              "date_of_birth": "17/03/2003",
+              "gender": "MALE",
+              "address": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+              "pin_code": "249403",
+              "state": "Uttarakhand"
+            },
+            "confidence_scores": {
+              "uid_number": 0.9,
+              "name": 0.9,
+              "date_of_birth": 0.9,
+              "gender": 0.4,
+              "address": 0.9,
+              "pin_code": 0.9,
+              "state": 0.9
+            },
+            "completeness_score": 0.8375,
+            "validation_errors": [
+              "gender_invalid_or_missing"
+            ]
+          },
+          "completeness_score": 0.8375,
+          "validation_errors": [
+            "gender_invalid_or_missing"
+          ],
+          "processing_metadata": {
+            "extraction_time": 50.9997,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 33.734
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "AADHAR_c3a1f34eb48b",
+            "document_type": "aadhar",
+            "validation_status": "REVIEW_REQUIRED",
+            "field_statuses": {
+              "uid_number": {
+                "value": "4228 8306 1159",
+                "normalized_value": "422883061159",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "12digits",
+                  "verhoeff",
+                  "non_sequential"
+                ],
+                "errors": [],
+                "original_extracted_value": "4228 8306 1159",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/03/2003",
+                "normalized_value": "17/03/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/03/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "MALE",
+                "normalized_value": "MALE",
+                "status": "VALID",
+                "confidence": 0.4,
+                "validation_rules": [
+                  "allowed_values:MALE/FEMALE/OTHER"
+                ],
+                "errors": [],
+                "original_extracted_value": "MALE",
+                "original_extracted_confidence": 0.4
+              },
+              "pin_code": {
+                "value": "249403",
+                "normalized_value": "249403",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "6digits",
+                  "first_digit_not_zero",
+                  "pin_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "249403",
+                "original_extracted_confidence": 0.9
+              },
+              "state": {
+                "value": "Uttarakhand",
+                "normalized_value": "Uttarakhand",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "state_list_normalize"
+                ],
+                "errors": [],
+                "original_extracted_value": "Uttarakhand",
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "Anurag Kaushik",
+                "normalized_value": "Anurag Kaushik",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Anurag Kaushik",
+                "original_extracted_confidence": 0.9
+              },
+              "address": {
+                "value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "normalized_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "uid_number": {
+                "value": "4228 8306 1159",
+                "normalized_value": "422883061159",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "12digits",
+                  "verhoeff",
+                  "non_sequential"
+                ],
+                "errors": [],
+                "original_extracted_value": "4228 8306 1159",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/03/2003",
+                "normalized_value": "17/03/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/03/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "MALE",
+                "normalized_value": "MALE",
+                "status": "VALID",
+                "confidence": 0.4,
+                "validation_rules": [
+                  "allowed_values:MALE/FEMALE/OTHER"
+                ],
+                "errors": [],
+                "original_extracted_value": "MALE",
+                "original_extracted_confidence": 0.4
+              },
+              "pin_code": {
+                "value": "249403",
+                "normalized_value": "249403",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "6digits",
+                  "first_digit_not_zero",
+                  "pin_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "249403",
+                "original_extracted_confidence": 0.9
+              },
+              "state": {
+                "value": "Uttarakhand",
+                "normalized_value": "Uttarakhand",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "state_list_normalize"
+                ],
+                "errors": [],
+                "original_extracted_value": "Uttarakhand",
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "Anurag Kaushik",
+                "normalized_value": "Anurag Kaushik",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Anurag Kaushik",
+                "original_extracted_confidence": 0.9
+              },
+              "address": {
+                "value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "normalized_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "S/O: Prabhat Kumar Kaushik, H-188, SHIWALIK NAGAR, B H E L, Hardwar, Hardwar, Uttarakhand, 249403",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.003
+        },
+        "errors": null
+      },
+      "has_review": false
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "ff38c5b6-7e67-40e8-ab6c-55d1ff0821aa",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.043
+      }
+    }
+  }
+}

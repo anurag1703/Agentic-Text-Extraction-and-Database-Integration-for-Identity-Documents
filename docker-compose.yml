@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: id_document_processor
+    environment:
+      # Use host.docker.internal on Docker Desktop to reach host services (Windows/macOS).
+      - OLLAMA_ENDPOINT=${OLLAMA_ENDPOINT:-http://host.docker.internal:11434}
+      - POPPLER_PATH=/usr/bin
+    volumes:
+      - ./outputs:/app/outputs
+      - ./models:/app/models
+      - ./tests/sample_documents:/app/sample_documents:ro
+    tty: false
+    stdin_open: false
+    # Default command is the orchestrator CLI; pass a PDF path when running.
+    command: ["--help"]

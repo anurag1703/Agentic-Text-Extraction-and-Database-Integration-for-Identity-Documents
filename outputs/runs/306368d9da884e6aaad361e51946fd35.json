@@ -1,0 +1,641 @@
+{
+  "trace_id": "306368d9da884e6aaad361e51946fd35",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\LA AgeProof IW1083516.pdf",
+  "start_time": "2026-01-20T10:16:39Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\LA AgeProof IW1083516.pdf",
+        "pages": [
+          {
+            "image_array": "[[[68 81 63]\n  [68 81 63]\n  [68 81 63]\n  ...\n  [73 78 77]\n  [73 78 77]\n  [71 77 76]]\n\n [[68 81 63]\n  [68 81 63]\n  [68 81 63]\n  ...\n  [73 78 77]\n  [73 78 77]\n  [71 77 76]]\n\n [[68 81 63]\n  [68 81 63]\n  [68 81 63]\n  ...\n  [73 78 77]\n  [71 77 76]\n  [71 77 76]]\n\n ...\n\n [[30  8  7]\n  [30  8  7]\n  [30  8  7]\n  ...\n  [16  6  5]\n  [16  6  5]\n  [16  6  5]]\n\n [[29  8  7]\n  [29  8  7]\n  [29  8  7]\n  ...\n  [16  6  5]\n  [16  6  5]\n  [16  6  5]]\n\n [[29  8  7]\n  [29  8  7]\n  [29  8  7]\n  ...\n  [16  6  5]\n  [16  6  5]\n  [16  6  5]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                643
+              ],
+              "quality_score": 0.4248,
+              "enhancements_applied": [
+                "rotated_90_ccw",
+                "resized_to_1024x643",
+                "unsharp_mask",
+                "denoise"
+              ],
+              "processing_time": 3.3053,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 29.440388394261785,
+                "brightness_mean": 101.08719047676905,
+                "contrast_std": 38.77578332275761,
+                "blur_variance_post_sharpen": 30.791121757818004,
+                "brightness_mean_post_denoise": 100.936713282465,
+                "contrast_std_post_denoise": 38.44681623897696,
+                "blur_variance_final": 14.153835658446704,
+                "brightness_mean_final": 100.936713282465,
+                "contrast_std_final": 38.44681623897696
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\LA AgeProof IW1083516_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 643,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 643.0
+        },
+        "timing": {
+          "elapsed_s": 4.199
+        }
+      },
+      "elapsed_s": 4.2,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9999998807907104,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PAN_d7f457a7df75",
+              "document_type": "pan",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "pan_card_front",
+                  "confidence": 0.9999998807907104,
+                  "processing_time": 1.4837473000006867,
+                  "document_type": "pan",
+                  "side": "single",
+                  "image_array": "[[[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [77 78 73]\n  [76 77 71]]\n\n [[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [77 78 73]\n  [76 77 71]]\n\n [[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [76 77 71]\n  [76 77 71]]\n\n ...\n\n [[ 7  8 30]\n  [ 7  8 30]\n  [ 7  8 30]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]\n\n [[ 7  8 29]\n  [ 7  8 29]\n  [ 7  8 29]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]\n\n [[ 7  8 29]\n  [ 7  8 29]\n  [ 7  8 29]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        643
+                      ],
+                      "quality_score": 0.4248,
+                      "enhancements_applied": [
+                        "rotated_90_ccw",
+                        "resized_to_1024x643",
+                        "unsharp_mask",
+                        "denoise"
+                      ],
+                      "processing_time": 3.3053,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 29.440388394261785,
+                        "brightness_mean": 101.08719047676905,
+                        "contrast_std": 38.77578332275761,
+                        "blur_variance_post_sharpen": 30.791121757818004,
+                        "brightness_mean_post_denoise": 100.936713282465,
+                        "contrast_std_post_denoise": 38.44681623897696,
+                        "blur_variance_final": 14.153835658446704,
+                        "brightness_mean_final": 100.936713282465,
+                        "contrast_std_final": 38.44681623897696
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.195
+          }
+        }
+      },
+      "elapsed_s": 4.196,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAN_d7f457a7df75",
+            "document_type": "pan",
+            "fields": {
+              "pan_number": "CJFPJ4976G",
+              "name": "DIVYAJAJODIA",
+              "fathers_name": "AJAJODIA PRIYANK",
+              "date_of_birth": "15/04/2003",
+              "signature_present": true
+            },
+            "confidences": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "pan_number": "CJFPJ4976G",
+                "name": "DIVYAJAJODIA",
+                "fathers_name": "AJAJODIA PRIYANK",
+                "date_of_birth": "15/04/2003",
+                "signature_present": true
+              },
+              "confidence_scores": {
+                "pan_number": 0.9,
+                "name": 0.9,
+                "fathers_name": 0.9,
+                "date_of_birth": 0.9,
+                "signature_present": 0.9
+              },
+              "completeness_score": 0.9,
+              "validation_errors": []
+            },
+            "completeness_score": 0.9,
+            "validation_errors": [],
+            "processing_metadata": {
+              "extraction_time": 17.7614,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 17.77
+        },
+        "debug": null
+      },
+      "elapsed_s": 17.772,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAN_d7f457a7df75",
+              "document_type": "pan",
+              "validation_status": "APPROVED",
+              "field_statuses": {
+                "pan_number": {
+                  "value": "CJFPJ4976G",
+                  "normalized_value": "CJFPJ4976G",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "CJFPJ4976G",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "15/04/2003",
+                  "normalized_value": "15/04/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "15/04/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "DIVYAJAJODIA",
+                  "normalized_value": "DIVYAJAJODIA",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "DIVYAJAJODIA",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "AJAJODIA PRIYANK",
+                  "normalized_value": "AJAJODIA PRIYANK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "AJAJODIA PRIYANK",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "pan_number": {
+                  "value": "CJFPJ4976G",
+                  "normalized_value": "CJFPJ4976G",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "CJFPJ4976G",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "15/04/2003",
+                  "normalized_value": "15/04/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "15/04/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "DIVYAJAJODIA",
+                  "normalized_value": "DIVYAJAJODIA",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "DIVYAJAJODIA",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "AJAJODIA PRIYANK",
+                  "normalized_value": "AJAJODIA PRIYANK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "AJAJODIA PRIYANK",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.005
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.005,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "435de511-bf38-42db-9df3-c437775ba53c",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.043
+        }
+      },
+      "elapsed_s": 0.043,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T10:17:06Z",
+  "timing": {
+    "elapsed_s": 26.24
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 643.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "pan_card_front",
+          "confidence": 0.9999998807907104,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PAN_d7f457a7df75",
+          "document_type": "pan",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9999998807907104,
+              "processing_time": 1.4837473000006867,
+              "document_type": "pan",
+              "side": "single",
+              "image_array": "[[[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [77 78 73]\n  [76 77 71]]\n\n [[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [77 78 73]\n  [76 77 71]]\n\n [[63 81 68]\n  [63 81 68]\n  [63 81 68]\n  ...\n  [77 78 73]\n  [76 77 71]\n  [76 77 71]]\n\n ...\n\n [[ 7  8 30]\n  [ 7  8 30]\n  [ 7  8 30]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]\n\n [[ 7  8 29]\n  [ 7  8 29]\n  [ 7  8 29]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]\n\n [[ 7  8 29]\n  [ 7  8 29]\n  [ 7  8 29]\n  ...\n  [ 5  6 16]\n  [ 5  6 16]\n  [ 5  6 16]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    643
+                  ],
+                  "quality_score": 0.4248,
+                  "enhancements_applied": [
+                    "rotated_90_ccw",
+                    "resized_to_1024x643",
+                    "unsharp_mask",
+                    "denoise"
+                  ],
+                  "processing_time": 3.3053,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 29.440388394261785,
+                    "brightness_mean": 101.08719047676905,
+                    "contrast_std": 38.77578332275761,
+                    "blur_variance_post_sharpen": 30.791121757818004,
+                    "brightness_mean_post_denoise": 100.936713282465,
+                    "contrast_std_post_denoise": 38.44681623897696,
+                    "blur_variance_final": 14.153835658446704,
+                    "brightness_mean_final": 100.936713282465,
+                    "contrast_std_final": 38.44681623897696
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.195
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PAN_d7f457a7df75",
+          "document_type": "pan",
+          "fields": {
+            "pan_number": "CJFPJ4976G",
+            "name": "DIVYAJAJODIA",
+            "fathers_name": "AJAJODIA PRIYANK",
+            "date_of_birth": "15/04/2003",
+            "signature_present": true
+          },
+          "confidences": {
+            "pan_number": 0.9,
+            "name": 0.9,
+            "fathers_name": 0.9,
+            "date_of_birth": 0.9,
+            "signature_present": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "pan_number": "CJFPJ4976G",
+              "name": "DIVYAJAJODIA",
+              "fathers_name": "AJAJODIA PRIYANK",
+              "date_of_birth": "15/04/2003",
+              "signature_present": true
+            },
+            "confidence_scores": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "completeness_score": 0.9,
+            "validation_errors": []
+          },
+          "completeness_score": 0.9,
+          "validation_errors": [],
+          "processing_metadata": {
+            "extraction_time": 17.7614,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 17.77
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PAN_d7f457a7df75",
+            "document_type": "pan",
+            "validation_status": "APPROVED",
+            "field_statuses": {
+              "pan_number": {
+                "value": "CJFPJ4976G",
+                "normalized_value": "CJFPJ4976G",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "CJFPJ4976G",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "15/04/2003",
+                "normalized_value": "15/04/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "15/04/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "DIVYAJAJODIA",
+                "normalized_value": "DIVYAJAJODIA",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "DIVYAJAJODIA",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "AJAJODIA PRIYANK",
+                "normalized_value": "AJAJODIA PRIYANK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "AJAJODIA PRIYANK",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "pan_number": {
+                "value": "CJFPJ4976G",
+                "normalized_value": "CJFPJ4976G",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "CJFPJ4976G",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "15/04/2003",
+                "normalized_value": "15/04/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "15/04/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "DIVYAJAJODIA",
+                "normalized_value": "DIVYAJAJODIA",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "DIVYAJAJODIA",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "AJAJODIA PRIYANK",
+                "normalized_value": "AJAJODIA PRIYANK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "AJAJODIA PRIYANK",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.005
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "435de511-bf38-42db-9df3-c437775ba53c",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.043
+      }
+    }
+  }
+}

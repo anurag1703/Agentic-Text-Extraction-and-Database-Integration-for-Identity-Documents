@@ -1,0 +1,623 @@
+{
+  "trace_id": "c073e6203347454bba9f3035bd4c17cf",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\anurag_pan.pdf",
+  "start_time": "2026-01-20T09:14:44Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\anurag_pan.pdf",
+        "pages": [
+          {
+            "image_array": "[[[136  38  37]\n  [136  40  38]\n  [133  38  36]\n  ...\n  [104  38  40]\n  [103  37  39]\n  [102  36  38]]\n\n [[138  40  39]\n  [136  38  37]\n  [135  38  37]\n  ...\n  [103  37  39]\n  [101  35  37]\n  [ 99  33  35]]\n\n [[139  40  39]\n  [137  38  38]\n  [137  39  38]\n  ...\n  [103  37  39]\n  [101  35  37]\n  [ 99  33  35]]\n\n ...\n\n [[131  65  55]\n  [135  65  55]\n  [141  63  54]\n  ...\n  [219 171 141]\n  [215 166 133]\n  [199 150 117]]\n\n [[124  61  50]\n  [132  64  53]\n  [141  63  55]\n  ...\n  [219 178 147]\n  [224 181 148]\n  [223 179 146]]\n\n [[127  61  51]\n  [133  65  55]\n  [139  66  57]\n  ...\n  [221 187 155]\n  [220 186 153]\n  [220 185 152]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                641
+              ],
+              "quality_score": 0.9022,
+              "enhancements_applied": [
+                "resized_to_1024x641"
+              ],
+              "processing_time": 3.1524,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 1459.7262680035972,
+                "brightness_mean": 179.73368637870516,
+                "contrast_std": 41.32114167582082,
+                "blur_variance_final": 1459.7262680035972,
+                "brightness_mean_final": 179.73368637870516,
+                "contrast_std_final": 41.32114167582082
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\anurag_pan_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 641,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 641.0
+        },
+        "timing": {
+          "elapsed_s": 12.435
+        }
+      },
+      "elapsed_s": 12.436,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9999784231185913,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PAN_7c11d46a8aa4",
+              "document_type": "pan",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "pan_card_front",
+                  "confidence": 0.9999784231185913,
+                  "processing_time": 1.5284252999990713,
+                  "document_type": "pan",
+                  "side": "single",
+                  "image_array": "[[[ 37  38 136]\n  [ 38  40 136]\n  [ 36  38 133]\n  ...\n  [ 40  38 104]\n  [ 39  37 103]\n  [ 38  36 102]]\n\n [[ 39  40 138]\n  [ 37  38 136]\n  [ 37  38 135]\n  ...\n  [ 39  37 103]\n  [ 37  35 101]\n  [ 35  33  99]]\n\n [[ 39  40 139]\n  [ 38  38 137]\n  [ 38  39 137]\n  ...\n  [ 39  37 103]\n  [ 37  35 101]\n  [ 35  33  99]]\n\n ...\n\n [[ 55  65 131]\n  [ 55  65 135]\n  [ 54  63 141]\n  ...\n  [141 171 219]\n  [133 166 215]\n  [117 150 199]]\n\n [[ 50  61 124]\n  [ 53  64 132]\n  [ 55  63 141]\n  ...\n  [147 178 219]\n  [148 181 224]\n  [146 179 223]]\n\n [[ 51  61 127]\n  [ 55  65 133]\n  [ 57  66 139]\n  ...\n  [155 187 221]\n  [153 186 220]\n  [152 185 220]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        641
+                      ],
+                      "quality_score": 0.9022,
+                      "enhancements_applied": [
+                        "resized_to_1024x641"
+                      ],
+                      "processing_time": 3.1524,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 1459.7262680035972,
+                        "brightness_mean": 179.73368637870516,
+                        "contrast_std": 41.32114167582082,
+                        "blur_variance_final": 1459.7262680035972,
+                        "brightness_mean_final": 179.73368637870516,
+                        "contrast_std_final": 41.32114167582082
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.194
+          }
+        }
+      },
+      "elapsed_s": 4.195,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAN_7c11d46a8aa4",
+            "document_type": "pan",
+            "fields": {
+              "pan_number": "PATPK7964M",
+              "name": "ANURAG KAUSHIK",
+              "fathers_name": "PRABHAT KUMAR KAUSHIK",
+              "date_of_birth": "17/03/2003",
+              "signature_present": true
+            },
+            "confidences": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "pan_number": "PATPK7964M",
+                "name": "ANURAG KAUSHIK",
+                "fathers_name": "PRABHAT KUMAR KAUSHIK",
+                "date_of_birth": "17/03/2003",
+                "signature_present": true
+              },
+              "confidence_scores": {
+                "pan_number": 0.9,
+                "name": 0.9,
+                "fathers_name": 0.9,
+                "date_of_birth": 0.9,
+                "signature_present": 0.9
+              },
+              "completeness_score": 0.9,
+              "validation_errors": []
+            },
+            "completeness_score": 0.9,
+            "validation_errors": [],
+            "processing_metadata": {
+              "extraction_time": 33.6785,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 33.686
+        },
+        "debug": null
+      },
+      "elapsed_s": 33.688,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAN_7c11d46a8aa4",
+              "document_type": "pan",
+              "validation_status": "APPROVED",
+              "field_statuses": {
+                "pan_number": {
+                  "value": "PATPK7964M",
+                  "normalized_value": "PATPK7964M",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "PATPK7964M",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/03/2003",
+                  "normalized_value": "17/03/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/03/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "ANURAG KAUSHIK",
+                  "normalized_value": "ANURAG KAUSHIK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "ANURAG KAUSHIK",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "PRABHAT KUMAR KAUSHIK",
+                  "normalized_value": "PRABHAT KUMAR KAUSHIK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "PRABHAT KUMAR KAUSHIK",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "pan_number": {
+                  "value": "PATPK7964M",
+                  "normalized_value": "PATPK7964M",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "PATPK7964M",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/03/2003",
+                  "normalized_value": "17/03/2003",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/03/2003",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": true,
+                  "normalized_value": true,
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": true,
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "ANURAG KAUSHIK",
+                  "normalized_value": "ANURAG KAUSHIK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "ANURAG KAUSHIK",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "PRABHAT KUMAR KAUSHIK",
+                  "normalized_value": "PRABHAT KUMAR KAUSHIK",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "PRABHAT KUMAR KAUSHIK",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.004
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.004,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "0da82b1e-a5d2-4f83-8bbb-d7d435e165f2",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.046
+        }
+      },
+      "elapsed_s": 0.046,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T09:15:34Z",
+  "timing": {
+    "elapsed_s": 50.398
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 641.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "pan_card_front",
+          "confidence": 0.9999784231185913,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PAN_7c11d46a8aa4",
+          "document_type": "pan",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "pan_card_front",
+              "confidence": 0.9999784231185913,
+              "processing_time": 1.5284252999990713,
+              "document_type": "pan",
+              "side": "single",
+              "image_array": "[[[ 37  38 136]\n  [ 38  40 136]\n  [ 36  38 133]\n  ...\n  [ 40  38 104]\n  [ 39  37 103]\n  [ 38  36 102]]\n\n [[ 39  40 138]\n  [ 37  38 136]\n  [ 37  38 135]\n  ...\n  [ 39  37 103]\n  [ 37  35 101]\n  [ 35  33  99]]\n\n [[ 39  40 139]\n  [ 38  38 137]\n  [ 38  39 137]\n  ...\n  [ 39  37 103]\n  [ 37  35 101]\n  [ 35  33  99]]\n\n ...\n\n [[ 55  65 131]\n  [ 55  65 135]\n  [ 54  63 141]\n  ...\n  [141 171 219]\n  [133 166 215]\n  [117 150 199]]\n\n [[ 50  61 124]\n  [ 53  64 132]\n  [ 55  63 141]\n  ...\n  [147 178 219]\n  [148 181 224]\n  [146 179 223]]\n\n [[ 51  61 127]\n  [ 55  65 133]\n  [ 57  66 139]\n  ...\n  [155 187 221]\n  [153 186 220]\n  [152 185 220]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    641
+                  ],
+                  "quality_score": 0.9022,
+                  "enhancements_applied": [
+                    "resized_to_1024x641"
+                  ],
+                  "processing_time": 3.1524,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 1459.7262680035972,
+                    "brightness_mean": 179.73368637870516,
+                    "contrast_std": 41.32114167582082,
+                    "blur_variance_final": 1459.7262680035972,
+                    "brightness_mean_final": 179.73368637870516,
+                    "contrast_std_final": 41.32114167582082
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.194
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PAN_7c11d46a8aa4",
+          "document_type": "pan",
+          "fields": {
+            "pan_number": "PATPK7964M",
+            "name": "ANURAG KAUSHIK",
+            "fathers_name": "PRABHAT KUMAR KAUSHIK",
+            "date_of_birth": "17/03/2003",
+            "signature_present": true
+          },
+          "confidences": {
+            "pan_number": 0.9,
+            "name": 0.9,
+            "fathers_name": 0.9,
+            "date_of_birth": 0.9,
+            "signature_present": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "pan_number": "PATPK7964M",
+              "name": "ANURAG KAUSHIK",
+              "fathers_name": "PRABHAT KUMAR KAUSHIK",
+              "date_of_birth": "17/03/2003",
+              "signature_present": true
+            },
+            "confidence_scores": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.9
+            },
+            "completeness_score": 0.9,
+            "validation_errors": []
+          },
+          "completeness_score": 0.9,
+          "validation_errors": [],
+          "processing_metadata": {
+            "extraction_time": 33.6785,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 33.686
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PAN_7c11d46a8aa4",
+            "document_type": "pan",
+            "validation_status": "APPROVED",
+            "field_statuses": {
+              "pan_number": {
+                "value": "PATPK7964M",
+                "normalized_value": "PATPK7964M",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "PATPK7964M",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/03/2003",
+                "normalized_value": "17/03/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/03/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "ANURAG KAUSHIK",
+                "normalized_value": "ANURAG KAUSHIK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "ANURAG KAUSHIK",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "PRABHAT KUMAR KAUSHIK",
+                "normalized_value": "PRABHAT KUMAR KAUSHIK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "PRABHAT KUMAR KAUSHIK",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "pan_number": {
+                "value": "PATPK7964M",
+                "normalized_value": "PATPK7964M",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "PATPK7964M",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/03/2003",
+                "normalized_value": "17/03/2003",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/03/2003",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": true,
+                "normalized_value": true,
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": true,
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "ANURAG KAUSHIK",
+                "normalized_value": "ANURAG KAUSHIK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "ANURAG KAUSHIK",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "PRABHAT KUMAR KAUSHIK",
+                "normalized_value": "PRABHAT KUMAR KAUSHIK",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "PRABHAT KUMAR KAUSHIK",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.004
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "0da82b1e-a5d2-4f83-8bbb-d7d435e165f2",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.046
+      }
+    }
+  }
+}

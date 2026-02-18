@@ -1,0 +1,640 @@
+{
+  "trace_id": "53290b7b8e504e3c9a36150a9f95be69",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\LA AgeProof.pdf",
+  "start_time": "2026-01-20T10:15:24Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\LA AgeProof.pdf",
+        "pages": [
+          {
+            "image_array": "[[[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]\n\n [[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]\n\n [[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]\n\n ...\n\n [[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]\n\n [[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]\n\n [[17 19 24]\n  [17 19 24]\n  [17 19 24]\n  ...\n  [16 19 26]\n  [15 19 27]\n  [15 19 27]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                937,
+                644
+              ],
+              "quality_score": 0.8413,
+              "enhancements_applied": [
+                "cropped_padding_(39, 0, 975, 643)",
+                "denoise"
+              ],
+              "processing_time": 2.9337,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 962.9128711296128,
+                "brightness_mean": 221.9138008179932,
+                "contrast_std": 61.86668086366875,
+                "brightness_mean_post_denoise": 221.7186060308769,
+                "contrast_std_post_denoise": 61.53993289039511,
+                "blur_variance_final": 891.3533230144419,
+                "brightness_mean_final": 221.7186060308769,
+                "contrast_std_final": 61.53993289039511
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\LA AgeProof_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 937,
+            "height": 644,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 937.0,
+          "avg_height": 644.0
+        },
+        "timing": {
+          "elapsed_s": 3.789
+        }
+      },
+      "elapsed_s": 3.79,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "pan_card_front",
+              "confidence": 1.0,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PAN_17a7cdb64445",
+              "document_type": "pan",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "pan_card_front",
+                  "confidence": 1.0,
+                  "processing_time": 1.4581873999995878,
+                  "document_type": "pan",
+                  "side": "single",
+                  "image_array": "[[[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n ...\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        937,
+                        644
+                      ],
+                      "quality_score": 0.8413,
+                      "enhancements_applied": [
+                        "cropped_padding_(39, 0, 975, 643)",
+                        "denoise"
+                      ],
+                      "processing_time": 2.9337,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 962.9128711296128,
+                        "brightness_mean": 221.9138008179932,
+                        "contrast_std": 61.86668086366875,
+                        "brightness_mean_post_denoise": 221.7186060308769,
+                        "contrast_std_post_denoise": 61.53993289039511,
+                        "blur_variance_final": 891.3533230144419,
+                        "brightness_mean_final": 221.7186060308769,
+                        "contrast_std_final": 61.53993289039511
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.197
+          }
+        }
+      },
+      "elapsed_s": 4.198,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PAN_17a7cdb64445",
+            "document_type": "pan",
+            "fields": {
+              "pan_number": "AIDPN4221F",
+              "name": "SONIA NANDI",
+              "fathers_name": "SURESH NARAIN TRIVEDI",
+              "date_of_birth": "04/09/1979",
+              "signature_present": null
+            },
+            "confidences": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.0
+            },
+            "extracted_data": {
+              "fields": {
+                "pan_number": "AIDPN4221F",
+                "name": "SONIA NANDI",
+                "fathers_name": "SURESH NARAIN TRIVEDI",
+                "date_of_birth": "04/09/1979",
+                "signature_present": null
+              },
+              "confidence_scores": {
+                "pan_number": 0.9,
+                "name": 0.9,
+                "fathers_name": 0.9,
+                "date_of_birth": 0.9,
+                "signature_present": 0.0
+              },
+              "completeness_score": 0.72,
+              "validation_errors": [
+                "signature_present_invalid_or_missing"
+              ]
+            },
+            "completeness_score": 0.72,
+            "validation_errors": [
+              "signature_present_invalid_or_missing"
+            ],
+            "processing_metadata": {
+              "extraction_time": 17.1854,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 17.192
+        },
+        "debug": null
+      },
+      "elapsed_s": 17.194,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PAN_17a7cdb64445",
+              "document_type": "pan",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {
+                "pan_number": {
+                  "value": "AIDPN4221F",
+                  "normalized_value": "AIDPN4221F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "AIDPN4221F",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "04/09/1979",
+                  "normalized_value": "04/09/1979",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "04/09/1979",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": null,
+                  "normalized_value": false,
+                  "status": "VALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "name": {
+                  "value": "SONIA NANDI",
+                  "normalized_value": "SONIA NANDI",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SONIA NANDI",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "SURESH NARAIN TRIVEDI",
+                  "normalized_value": "SURESH NARAIN TRIVEDI",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SURESH NARAIN TRIVEDI",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "pan_number": {
+                  "value": "AIDPN4221F",
+                  "normalized_value": "AIDPN4221F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_AAAAA9999A",
+                    "checksum"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "AIDPN4221F",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "04/09/1979",
+                  "normalized_value": "04/09/1979",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_check_if_individual_pan"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "04/09/1979",
+                  "original_extracted_confidence": 0.9
+                },
+                "signature_present": {
+                  "value": null,
+                  "normalized_value": false,
+                  "status": "VALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "boolean_or_null_allowed",
+                    "null_treated_as_false"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "name": {
+                  "value": "SONIA NANDI",
+                  "normalized_value": "SONIA NANDI",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SONIA NANDI",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": "SURESH NARAIN TRIVEDI",
+                  "normalized_value": "SURESH NARAIN TRIVEDI",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "SURESH NARAIN TRIVEDI",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.005,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "8e77d56d-c9e8-43fc-9444-4c0b7e73a255",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.051
+        }
+      },
+      "elapsed_s": 0.051,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T10:15:49Z",
+  "timing": {
+    "elapsed_s": 25.256
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 937.0,
+        "avg_height": 644.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "pan_card_front",
+          "confidence": 1.0,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PAN_17a7cdb64445",
+          "document_type": "pan",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "pan_card_front",
+              "confidence": 1.0,
+              "processing_time": 1.4581873999995878,
+              "document_type": "pan",
+              "side": "single",
+              "image_array": "[[[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n ...\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]\n\n [[24 19 17]\n  [24 19 17]\n  [24 19 17]\n  ...\n  [26 19 16]\n  [27 19 15]\n  [27 19 15]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    937,
+                    644
+                  ],
+                  "quality_score": 0.8413,
+                  "enhancements_applied": [
+                    "cropped_padding_(39, 0, 975, 643)",
+                    "denoise"
+                  ],
+                  "processing_time": 2.9337,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 962.9128711296128,
+                    "brightness_mean": 221.9138008179932,
+                    "contrast_std": 61.86668086366875,
+                    "brightness_mean_post_denoise": 221.7186060308769,
+                    "contrast_std_post_denoise": 61.53993289039511,
+                    "blur_variance_final": 891.3533230144419,
+                    "brightness_mean_final": 221.7186060308769,
+                    "contrast_std_final": 61.53993289039511
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.197
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PAN_17a7cdb64445",
+          "document_type": "pan",
+          "fields": {
+            "pan_number": "AIDPN4221F",
+            "name": "SONIA NANDI",
+            "fathers_name": "SURESH NARAIN TRIVEDI",
+            "date_of_birth": "04/09/1979",
+            "signature_present": null
+          },
+          "confidences": {
+            "pan_number": 0.9,
+            "name": 0.9,
+            "fathers_name": 0.9,
+            "date_of_birth": 0.9,
+            "signature_present": 0.0
+          },
+          "extracted_data": {
+            "fields": {
+              "pan_number": "AIDPN4221F",
+              "name": "SONIA NANDI",
+              "fathers_name": "SURESH NARAIN TRIVEDI",
+              "date_of_birth": "04/09/1979",
+              "signature_present": null
+            },
+            "confidence_scores": {
+              "pan_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.9,
+              "date_of_birth": 0.9,
+              "signature_present": 0.0
+            },
+            "completeness_score": 0.72,
+            "validation_errors": [
+              "signature_present_invalid_or_missing"
+            ]
+          },
+          "completeness_score": 0.72,
+          "validation_errors": [
+            "signature_present_invalid_or_missing"
+          ],
+          "processing_metadata": {
+            "extraction_time": 17.1854,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 17.192
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PAN_17a7cdb64445",
+            "document_type": "pan",
+            "validation_status": "REVIEW_REQUIRED",
+            "field_statuses": {
+              "pan_number": {
+                "value": "AIDPN4221F",
+                "normalized_value": "AIDPN4221F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "AIDPN4221F",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "04/09/1979",
+                "normalized_value": "04/09/1979",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "04/09/1979",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": null,
+                "normalized_value": false,
+                "status": "VALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "name": {
+                "value": "SONIA NANDI",
+                "normalized_value": "SONIA NANDI",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SONIA NANDI",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "SURESH NARAIN TRIVEDI",
+                "normalized_value": "SURESH NARAIN TRIVEDI",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SURESH NARAIN TRIVEDI",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "pan_number": {
+                "value": "AIDPN4221F",
+                "normalized_value": "AIDPN4221F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_AAAAA9999A",
+                  "checksum"
+                ],
+                "errors": [],
+                "original_extracted_value": "AIDPN4221F",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "04/09/1979",
+                "normalized_value": "04/09/1979",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_check_if_individual_pan"
+                ],
+                "errors": [],
+                "original_extracted_value": "04/09/1979",
+                "original_extracted_confidence": 0.9
+              },
+              "signature_present": {
+                "value": null,
+                "normalized_value": false,
+                "status": "VALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "boolean_or_null_allowed",
+                  "null_treated_as_false"
+                ],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "name": {
+                "value": "SONIA NANDI",
+                "normalized_value": "SONIA NANDI",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SONIA NANDI",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": "SURESH NARAIN TRIVEDI",
+                "normalized_value": "SURESH NARAIN TRIVEDI",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "SURESH NARAIN TRIVEDI",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.002
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "8e77d56d-c9e8-43fc-9444-4c0b7e73a255",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.051
+      }
+    }
+  }
+}

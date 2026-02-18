@@ -1,0 +1,900 @@
+{
+  "trace_id": "e12e62c681344debaab42433b6d7f8ff",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\6.pdf",
+  "start_time": "2026-02-02T11:10:02Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\6.pdf",
+        "pages": [
+          {
+            "image_array": "[[[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                658
+              ],
+              "quality_score": 0.8669,
+              "enhancements_applied": [
+                "cropped_padding_(65, 0, 1204, 1773)",
+                "rotated_90_ccw",
+                "resized_to_1024x658",
+                "denoise"
+              ],
+              "processing_time": 3.4882,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 1807.574034716866,
+                "brightness_mean": 219.21902011303192,
+                "contrast_std": 61.853913190628845,
+                "brightness_mean_post_denoise": 219.24495986892097,
+                "contrast_std_post_denoise": 61.27576445338947,
+                "blur_variance_final": 1529.1976752466433,
+                "brightness_mean_final": 219.24495986892097,
+                "contrast_std_final": 61.27576445338947
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\6_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 658,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 658.0
+        },
+        "timing": {
+          "elapsed_s": 4.465
+        }
+      },
+      "elapsed_s": 4.466,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "ok",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "passport",
+              "confidence": 0.9825488328933716,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "PASSPORT_4cf75bdda258",
+              "document_type": "passport",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "passport",
+                  "confidence": 0.9825488328933716,
+                  "processing_time": 1.4906222999998135,
+                  "document_type": "passport",
+                  "side": "single",
+                  "image_array": "[[[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        658
+                      ],
+                      "quality_score": 0.8669,
+                      "enhancements_applied": [
+                        "cropped_padding_(65, 0, 1204, 1773)",
+                        "rotated_90_ccw",
+                        "resized_to_1024x658",
+                        "denoise"
+                      ],
+                      "processing_time": 3.4882,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 1807.574034716866,
+                        "brightness_mean": 219.21902011303192,
+                        "contrast_std": 61.853913190628845,
+                        "brightness_mean_post_denoise": 219.24495986892097,
+                        "contrast_std_post_denoise": 61.27576445338947,
+                        "blur_variance_final": 1529.1976752466433,
+                        "brightness_mean_final": 219.24495986892097,
+                        "contrast_std_final": 61.27576445338947
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.25
+          }
+        }
+      },
+      "elapsed_s": 4.252,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "PASSPORT_4cf75bdda258",
+            "document_type": "passport",
+            "fields": {
+              "passport_number": "U9031468",
+              "full_name": "THAKUR PARUL",
+              "nationality_text": "INDIAN",
+              "nationality_code": "IND",
+              "gender": "F",
+              "date_of_birth": "31/10/1996",
+              "place_of_issue": "DEHRADUN, HIMACHAL PRADESH",
+              "date_of_issue": "27/04/2021",
+              "date_of_expiry": "26/04/2021",
+              "address": "JALANDHAR"
+            },
+            "confidences": {
+              "passport_number": 0.9,
+              "full_name": 0.9,
+              "nationality_text": 0.9,
+              "nationality_code": 0.9,
+              "gender": 0.9,
+              "date_of_birth": 0.9,
+              "place_of_issue": 0.9,
+              "date_of_issue": 0.9,
+              "date_of_expiry": 0.9,
+              "address": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "passport_number": "U9031468",
+                "full_name": "THAKUR PARUL",
+                "nationality_text": "INDIAN",
+                "nationality_code": "IND",
+                "gender": "F",
+                "date_of_birth": "31/10/1996",
+                "place_of_issue": "DEHRADUN, HIMACHAL PRADESH",
+                "date_of_issue": "27/04/2021",
+                "date_of_expiry": "26/04/2021",
+                "address": "JALANDHAR"
+              },
+              "confidence_scores": {
+                "passport_number": 0.9,
+                "full_name": 0.9,
+                "nationality_text": 0.9,
+                "nationality_code": 0.9,
+                "gender": 0.9,
+                "date_of_birth": 0.9,
+                "place_of_issue": 0.9,
+                "date_of_issue": 0.9,
+                "date_of_expiry": 0.9,
+                "address": 0.9
+              },
+              "completeness_score": 0.9,
+              "validation_errors": []
+            },
+            "completeness_score": 0.9,
+            "validation_errors": [],
+            "processing_metadata": {
+              "extraction_time": 27.4369,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 27.444
+        },
+        "debug": null
+      },
+      "elapsed_s": 27.526,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "PASSPORT_4cf75bdda258",
+              "document_type": "passport",
+              "validation_status": "APPROVED",
+              "field_statuses": {
+                "passport_number": {
+                  "value": "U9031468",
+                  "normalized_value": "U9031468",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_[A-Z][0-9]{7}"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "U9031468",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "31/10/1996",
+                  "normalized_value": "31/10/1996",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "31/10/1996",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_issue": {
+                  "value": "27/04/2021",
+                  "normalized_value": "27/04/2021",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "27/04/2021",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_expiry": {
+                  "value": "26/04/2021",
+                  "normalized_value": "26/04/2021",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "after_issue_date"
+                  ],
+                  "errors": [
+                    "passport_expiry_before_issue"
+                  ],
+                  "original_extracted_value": "26/04/2021",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "F",
+                  "normalized_value": "F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "allowed:M/F/X"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "F",
+                  "original_extracted_confidence": 0.9
+                },
+                "full_name": {
+                  "value": "THAKUR PARUL",
+                  "normalized_value": "THAKUR PARUL",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "THAKUR PARUL",
+                  "original_extracted_confidence": 0.9
+                },
+                "nationality_text": {
+                  "value": "INDIAN",
+                  "normalized_value": "INDIAN",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "INDIAN",
+                  "original_extracted_confidence": 0.9
+                },
+                "nationality_code": {
+                  "value": "IND",
+                  "normalized_value": "IND",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "IND",
+                  "original_extracted_confidence": 0.9
+                },
+                "place_of_issue": {
+                  "value": "DEHRADUN, HIMACHAL PRADESH",
+                  "normalized_value": "DEHRADUN, HIMACHAL PRADESH",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "DEHRADUN, HIMACHAL PRADESH",
+                  "original_extracted_confidence": 0.9
+                },
+                "address": {
+                  "value": "JALANDHAR",
+                  "normalized_value": "JALANDHAR",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "JALANDHAR",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "passport_number": {
+                  "value": "U9031468",
+                  "normalized_value": "U9031468",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "regex_[A-Z][0-9]{7}"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "U9031468",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "31/10/1996",
+                  "normalized_value": "31/10/1996",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "31/10/1996",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_issue": {
+                  "value": "27/04/2021",
+                  "normalized_value": "27/04/2021",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "27/04/2021",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_expiry": {
+                  "value": "26/04/2021",
+                  "normalized_value": "26/04/2021",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "after_issue_date"
+                  ],
+                  "errors": [
+                    "passport_expiry_before_issue"
+                  ],
+                  "original_extracted_value": "26/04/2021",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "F",
+                  "normalized_value": "F",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "allowed:M/F/X"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "F",
+                  "original_extracted_confidence": 0.9
+                },
+                "full_name": {
+                  "value": "THAKUR PARUL",
+                  "normalized_value": "THAKUR PARUL",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "THAKUR PARUL",
+                  "original_extracted_confidence": 0.9
+                },
+                "nationality_text": {
+                  "value": "INDIAN",
+                  "normalized_value": "INDIAN",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "INDIAN",
+                  "original_extracted_confidence": 0.9
+                },
+                "nationality_code": {
+                  "value": "IND",
+                  "normalized_value": "IND",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "IND",
+                  "original_extracted_confidence": 0.9
+                },
+                "place_of_issue": {
+                  "value": "DEHRADUN, HIMACHAL PRADESH",
+                  "normalized_value": "DEHRADUN, HIMACHAL PRADESH",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "DEHRADUN, HIMACHAL PRADESH",
+                  "original_extracted_confidence": 0.9
+                },
+                "address": {
+                  "value": "JALANDHAR",
+                  "normalized_value": "JALANDHAR",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "JALANDHAR",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.003
+          },
+          "errors": null
+        },
+        "has_review": false
+      },
+      "elapsed_s": 0.003,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "a591be9e-9d23-488f-98a7-582aa151141c",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.058
+        }
+      },
+      "elapsed_s": 0.058,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-02-02T11:10:39Z",
+  "timing": {
+    "elapsed_s": 36.327
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 658.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "ok",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "passport",
+          "confidence": 0.9825488328933716,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "PASSPORT_4cf75bdda258",
+          "document_type": "passport",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "passport",
+              "confidence": 0.9825488328933716,
+              "processing_time": 1.4906222999998135,
+              "document_type": "passport",
+              "side": "single",
+              "image_array": "[[[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 251 254]\n  [254 251 254]\n  [254 251 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[254 254 254]\n  [254 254 254]\n  [254 254 254]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    658
+                  ],
+                  "quality_score": 0.8669,
+                  "enhancements_applied": [
+                    "cropped_padding_(65, 0, 1204, 1773)",
+                    "rotated_90_ccw",
+                    "resized_to_1024x658",
+                    "denoise"
+                  ],
+                  "processing_time": 3.4882,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 1807.574034716866,
+                    "brightness_mean": 219.21902011303192,
+                    "contrast_std": 61.853913190628845,
+                    "brightness_mean_post_denoise": 219.24495986892097,
+                    "contrast_std_post_denoise": 61.27576445338947,
+                    "blur_variance_final": 1529.1976752466433,
+                    "brightness_mean_final": 219.24495986892097,
+                    "contrast_std_final": 61.27576445338947
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.25
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "PASSPORT_4cf75bdda258",
+          "document_type": "passport",
+          "fields": {
+            "passport_number": "U9031468",
+            "full_name": "THAKUR PARUL",
+            "nationality_text": "INDIAN",
+            "nationality_code": "IND",
+            "gender": "F",
+            "date_of_birth": "31/10/1996",
+            "place_of_issue": "DEHRADUN, HIMACHAL PRADESH",
+            "date_of_issue": "27/04/2021",
+            "date_of_expiry": "26/04/2021",
+            "address": "JALANDHAR"
+          },
+          "confidences": {
+            "passport_number": 0.9,
+            "full_name": 0.9,
+            "nationality_text": 0.9,
+            "nationality_code": 0.9,
+            "gender": 0.9,
+            "date_of_birth": 0.9,
+            "place_of_issue": 0.9,
+            "date_of_issue": 0.9,
+            "date_of_expiry": 0.9,
+            "address": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "passport_number": "U9031468",
+              "full_name": "THAKUR PARUL",
+              "nationality_text": "INDIAN",
+              "nationality_code": "IND",
+              "gender": "F",
+              "date_of_birth": "31/10/1996",
+              "place_of_issue": "DEHRADUN, HIMACHAL PRADESH",
+              "date_of_issue": "27/04/2021",
+              "date_of_expiry": "26/04/2021",
+              "address": "JALANDHAR"
+            },
+            "confidence_scores": {
+              "passport_number": 0.9,
+              "full_name": 0.9,
+              "nationality_text": 0.9,
+              "nationality_code": 0.9,
+              "gender": 0.9,
+              "date_of_birth": 0.9,
+              "place_of_issue": 0.9,
+              "date_of_issue": 0.9,
+              "date_of_expiry": 0.9,
+              "address": 0.9
+            },
+            "completeness_score": 0.9,
+            "validation_errors": []
+          },
+          "completeness_score": 0.9,
+          "validation_errors": [],
+          "processing_metadata": {
+            "extraction_time": 27.4369,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 27.444
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "PASSPORT_4cf75bdda258",
+            "document_type": "passport",
+            "validation_status": "APPROVED",
+            "field_statuses": {
+              "passport_number": {
+                "value": "U9031468",
+                "normalized_value": "U9031468",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_[A-Z][0-9]{7}"
+                ],
+                "errors": [],
+                "original_extracted_value": "U9031468",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "31/10/1996",
+                "normalized_value": "31/10/1996",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "31/10/1996",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_issue": {
+                "value": "27/04/2021",
+                "normalized_value": "27/04/2021",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy"
+                ],
+                "errors": [],
+                "original_extracted_value": "27/04/2021",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_expiry": {
+                "value": "26/04/2021",
+                "normalized_value": "26/04/2021",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "after_issue_date"
+                ],
+                "errors": [
+                  "passport_expiry_before_issue"
+                ],
+                "original_extracted_value": "26/04/2021",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "F",
+                "normalized_value": "F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "allowed:M/F/X"
+                ],
+                "errors": [],
+                "original_extracted_value": "F",
+                "original_extracted_confidence": 0.9
+              },
+              "full_name": {
+                "value": "THAKUR PARUL",
+                "normalized_value": "THAKUR PARUL",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "THAKUR PARUL",
+                "original_extracted_confidence": 0.9
+              },
+              "nationality_text": {
+                "value": "INDIAN",
+                "normalized_value": "INDIAN",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "INDIAN",
+                "original_extracted_confidence": 0.9
+              },
+              "nationality_code": {
+                "value": "IND",
+                "normalized_value": "IND",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "IND",
+                "original_extracted_confidence": 0.9
+              },
+              "place_of_issue": {
+                "value": "DEHRADUN, HIMACHAL PRADESH",
+                "normalized_value": "DEHRADUN, HIMACHAL PRADESH",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "DEHRADUN, HIMACHAL PRADESH",
+                "original_extracted_confidence": 0.9
+              },
+              "address": {
+                "value": "JALANDHAR",
+                "normalized_value": "JALANDHAR",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "JALANDHAR",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "passport_number": {
+                "value": "U9031468",
+                "normalized_value": "U9031468",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "regex_[A-Z][0-9]{7}"
+                ],
+                "errors": [],
+                "original_extracted_value": "U9031468",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "31/10/1996",
+                "normalized_value": "31/10/1996",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "31/10/1996",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_issue": {
+                "value": "27/04/2021",
+                "normalized_value": "27/04/2021",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy"
+                ],
+                "errors": [],
+                "original_extracted_value": "27/04/2021",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_expiry": {
+                "value": "26/04/2021",
+                "normalized_value": "26/04/2021",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "after_issue_date"
+                ],
+                "errors": [
+                  "passport_expiry_before_issue"
+                ],
+                "original_extracted_value": "26/04/2021",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "F",
+                "normalized_value": "F",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "allowed:M/F/X"
+                ],
+                "errors": [],
+                "original_extracted_value": "F",
+                "original_extracted_confidence": 0.9
+              },
+              "full_name": {
+                "value": "THAKUR PARUL",
+                "normalized_value": "THAKUR PARUL",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "THAKUR PARUL",
+                "original_extracted_confidence": 0.9
+              },
+              "nationality_text": {
+                "value": "INDIAN",
+                "normalized_value": "INDIAN",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "INDIAN",
+                "original_extracted_confidence": 0.9
+              },
+              "nationality_code": {
+                "value": "IND",
+                "normalized_value": "IND",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "IND",
+                "original_extracted_confidence": 0.9
+              },
+              "place_of_issue": {
+                "value": "DEHRADUN, HIMACHAL PRADESH",
+                "normalized_value": "DEHRADUN, HIMACHAL PRADESH",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "DEHRADUN, HIMACHAL PRADESH",
+                "original_extracted_confidence": 0.9
+              },
+              "address": {
+                "value": "JALANDHAR",
+                "normalized_value": "JALANDHAR",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "JALANDHAR",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.003
+        },
+        "errors": null
+      },
+      "has_review": false
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "a591be9e-9d23-488f-98a7-582aa151141c",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.058
+      }
+    }
+  }
+}

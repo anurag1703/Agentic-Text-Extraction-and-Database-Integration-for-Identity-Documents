@@ -1,0 +1,755 @@
+{
+  "trace_id": "ad03ad765b8943c99c672a62e30acb90",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\anurag_dl.pdf",
+  "start_time": "2026-01-20T07:29:48Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\tests\\sample_documents\\anurag_dl.pdf",
+        "pages": [
+          {
+            "image_array": "[[[252 254 250]\n  [252 254 250]\n  [252 254 250]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[249 253 247]\n  [249 253 247]\n  [249 253 247]\n  ...\n  [252 252 252]\n  [254 254 254]\n  [254 254 254]]\n\n [[252 254 250]\n  [252 254 250]\n  [252 254 250]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[252 254 254]\n  [252 254 254]\n  [252 254 254]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[252 254 254]\n  [252 254 254]\n  [252 254 254]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[252 254 254]\n  [252 254 254]\n  [252 254 254]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                624
+              ],
+              "quality_score": 0.9445,
+              "enhancements_applied": [
+                "cropped_padding_(0, 931, 2313, 2339)",
+                "resized_to_1024x624",
+                "denoise"
+              ],
+              "processing_time": 3.7224,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 883.3446123748921,
+                "brightness_mean": 198.69999499198718,
+                "contrast_std": 63.38146872647126,
+                "brightness_mean_post_denoise": 198.8517143053886,
+                "contrast_std_post_denoise": 63.50489880077618,
+                "blur_variance_final": 854.4060134118022,
+                "brightness_mean_final": 198.8517143053886,
+                "contrast_std_final": 63.50489880077618
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\anurag_dl_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 624,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 624.0
+        },
+        "timing": {
+          "elapsed_s": 4.845
+        }
+      },
+      "elapsed_s": 4.845,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "incomplete",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "driving_license_front",
+              "confidence": 0.9994615912437439,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "DRIVING_LICENSE_0d48af29804a",
+              "document_type": "driving_license",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "driving_license_front",
+                  "confidence": 0.9994615912437439,
+                  "processing_time": 1.4183590999964508,
+                  "document_type": "driving_license",
+                  "side": "front",
+                  "image_array": "[[[250 254 252]\n  [250 254 252]\n  [250 254 252]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[247 253 249]\n  [247 253 249]\n  [247 253 249]\n  ...\n  [252 252 252]\n  [254 254 254]\n  [254 254 254]]\n\n [[250 254 252]\n  [250 254 252]\n  [250 254 252]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        624
+                      ],
+                      "quality_score": 0.9445,
+                      "enhancements_applied": [
+                        "cropped_padding_(0, 931, 2313, 2339)",
+                        "resized_to_1024x624",
+                        "denoise"
+                      ],
+                      "processing_time": 3.7224,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 883.3446123748921,
+                        "brightness_mean": 198.69999499198718,
+                        "contrast_std": 63.38146872647126,
+                        "brightness_mean_post_denoise": 198.8517143053886,
+                        "contrast_std_post_denoise": 63.50489880077618,
+                        "blur_variance_final": 854.4060134118022,
+                        "brightness_mean_final": 198.8517143053886,
+                        "contrast_std_final": 63.50489880077618
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 3.961
+          }
+        }
+      },
+      "elapsed_s": 3.962,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "DRIVING_LICENSE_0d48af29804a",
+            "document_type": "driving_license",
+            "fields": {
+              "dl_number": "DL-0420110194664",
+              "name": "ABHAR BREZA",
+              "fathers_name": null,
+              "date_of_birth": "09/02/1976",
+              "address": "Vihar, Delhi 110063",
+              "issue_date": "01/03/2011",
+              "valid_until": "06/02/2026"
+            },
+            "confidences": {
+              "dl_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.0,
+              "date_of_birth": 0.9,
+              "address": 0.9,
+              "issue_date": 0.9,
+              "valid_until": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "dl_number": "DL-0420110194664",
+                "name": "ABHAR BREZA",
+                "fathers_name": null,
+                "date_of_birth": "09/02/1976",
+                "address": "Vihar, Delhi 110063",
+                "issue_date": "01/03/2011",
+                "valid_until": "06/02/2026"
+              },
+              "confidence_scores": {
+                "dl_number": 0.9,
+                "name": 0.9,
+                "fathers_name": 0.0,
+                "date_of_birth": 0.9,
+                "address": 0.9,
+                "issue_date": 0.9,
+                "valid_until": 0.9
+              },
+              "completeness_score": 0.7714,
+              "validation_errors": [
+                "fathers_name_invalid_or_missing"
+              ]
+            },
+            "completeness_score": 0.7714,
+            "validation_errors": [
+              "fathers_name_invalid_or_missing"
+            ],
+            "processing_metadata": {
+              "extraction_time": 23.047,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 23.053
+        },
+        "debug": null
+      },
+      "elapsed_s": 23.135,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "DRIVING_LICENSE_0d48af29804a",
+              "document_type": "driving_license",
+              "validation_status": "REVIEW_REQUIRED",
+              "field_statuses": {
+                "dl_number": {
+                  "value": "DL-0420110194664",
+                  "normalized_value": "DL-0420110194664",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "state_code_prefix",
+                    "length_10_16"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "DL-0420110194664",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "09/02/1976",
+                  "normalized_value": "09/02/1976",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "min_age_18"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "09/02/1976",
+                  "original_extracted_confidence": 0.9
+                },
+                "issue_date": {
+                  "value": "01/03/2011",
+                  "normalized_value": "01/03/2011",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "not_future"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "01/03/2011",
+                  "original_extracted_confidence": 0.9
+                },
+                "valid_until": {
+                  "value": "06/02/2026",
+                  "normalized_value": "06/02/2026",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "not_before_issue",
+                    "not_expired_flagged"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "06/02/2026",
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "ABHAR BREZA",
+                  "normalized_value": "ABHAR BREZA",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "ABHAR BREZA",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": null,
+                  "confidence": 0.0,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "address": {
+                  "value": "Vihar, Delhi 110063",
+                  "normalized_value": "Vihar, Delhi 110063",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Vihar, Delhi 110063",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "dl_number": {
+                  "value": "DL-0420110194664",
+                  "normalized_value": "DL-0420110194664",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "state_code_prefix",
+                    "length_10_16"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "DL-0420110194664",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "09/02/1976",
+                  "normalized_value": "09/02/1976",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "min_age_18"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "09/02/1976",
+                  "original_extracted_confidence": 0.9
+                },
+                "issue_date": {
+                  "value": "01/03/2011",
+                  "normalized_value": "01/03/2011",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "not_future"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "01/03/2011",
+                  "original_extracted_confidence": 0.9
+                },
+                "valid_until": {
+                  "value": "06/02/2026",
+                  "normalized_value": "06/02/2026",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "not_before_issue",
+                    "not_expired_flagged"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "06/02/2026",
+                  "original_extracted_confidence": 0.9
+                },
+                "name": {
+                  "value": "ABHAR BREZA",
+                  "normalized_value": "ABHAR BREZA",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "ABHAR BREZA",
+                  "original_extracted_confidence": 0.9
+                },
+                "fathers_name": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": null,
+                  "confidence": 0.0,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": 0.0
+                },
+                "address": {
+                  "value": "Vihar, Delhi 110063",
+                  "normalized_value": "Vihar, Delhi 110063",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Vihar, Delhi 110063",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.003,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "965ea663-1a90-49f7-8948-10ce354c4c93",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.042
+        }
+      },
+      "elapsed_s": 0.042,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T07:30:20Z",
+  "timing": {
+    "elapsed_s": 32.006
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 624.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "incomplete",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "driving_license_front",
+          "confidence": 0.9994615912437439,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "DRIVING_LICENSE_0d48af29804a",
+          "document_type": "driving_license",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "driving_license_front",
+              "confidence": 0.9994615912437439,
+              "processing_time": 1.4183590999964508,
+              "document_type": "driving_license",
+              "side": "front",
+              "image_array": "[[[250 254 252]\n  [250 254 252]\n  [250 254 252]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n [[247 253 249]\n  [247 253 249]\n  [247 253 249]\n  ...\n  [252 252 252]\n  [254 254 254]\n  [254 254 254]]\n\n [[250 254 252]\n  [250 254 252]\n  [250 254 252]\n  ...\n  [254 254 254]\n  [254 254 254]\n  [254 254 254]]\n\n ...\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]\n\n [[254 254 252]\n  [254 254 252]\n  [254 254 252]\n  ...\n  [249 249 249]\n  [249 249 249]\n  [249 249 249]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    624
+                  ],
+                  "quality_score": 0.9445,
+                  "enhancements_applied": [
+                    "cropped_padding_(0, 931, 2313, 2339)",
+                    "resized_to_1024x624",
+                    "denoise"
+                  ],
+                  "processing_time": 3.7224,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 883.3446123748921,
+                    "brightness_mean": 198.69999499198718,
+                    "contrast_std": 63.38146872647126,
+                    "brightness_mean_post_denoise": 198.8517143053886,
+                    "contrast_std_post_denoise": 63.50489880077618,
+                    "blur_variance_final": 854.4060134118022,
+                    "brightness_mean_final": 198.8517143053886,
+                    "contrast_std_final": 63.50489880077618
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 3.961
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "DRIVING_LICENSE_0d48af29804a",
+          "document_type": "driving_license",
+          "fields": {
+            "dl_number": "DL-0420110194664",
+            "name": "ABHAR BREZA",
+            "fathers_name": null,
+            "date_of_birth": "09/02/1976",
+            "address": "Vihar, Delhi 110063",
+            "issue_date": "01/03/2011",
+            "valid_until": "06/02/2026"
+          },
+          "confidences": {
+            "dl_number": 0.9,
+            "name": 0.9,
+            "fathers_name": 0.0,
+            "date_of_birth": 0.9,
+            "address": 0.9,
+            "issue_date": 0.9,
+            "valid_until": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "dl_number": "DL-0420110194664",
+              "name": "ABHAR BREZA",
+              "fathers_name": null,
+              "date_of_birth": "09/02/1976",
+              "address": "Vihar, Delhi 110063",
+              "issue_date": "01/03/2011",
+              "valid_until": "06/02/2026"
+            },
+            "confidence_scores": {
+              "dl_number": 0.9,
+              "name": 0.9,
+              "fathers_name": 0.0,
+              "date_of_birth": 0.9,
+              "address": 0.9,
+              "issue_date": 0.9,
+              "valid_until": 0.9
+            },
+            "completeness_score": 0.7714,
+            "validation_errors": [
+              "fathers_name_invalid_or_missing"
+            ]
+          },
+          "completeness_score": 0.7714,
+          "validation_errors": [
+            "fathers_name_invalid_or_missing"
+          ],
+          "processing_metadata": {
+            "extraction_time": 23.047,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 23.053
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "DRIVING_LICENSE_0d48af29804a",
+            "document_type": "driving_license",
+            "validation_status": "REVIEW_REQUIRED",
+            "field_statuses": {
+              "dl_number": {
+                "value": "DL-0420110194664",
+                "normalized_value": "DL-0420110194664",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "state_code_prefix",
+                  "length_10_16"
+                ],
+                "errors": [],
+                "original_extracted_value": "DL-0420110194664",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "09/02/1976",
+                "normalized_value": "09/02/1976",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "min_age_18"
+                ],
+                "errors": [],
+                "original_extracted_value": "09/02/1976",
+                "original_extracted_confidence": 0.9
+              },
+              "issue_date": {
+                "value": "01/03/2011",
+                "normalized_value": "01/03/2011",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "not_future"
+                ],
+                "errors": [],
+                "original_extracted_value": "01/03/2011",
+                "original_extracted_confidence": 0.9
+              },
+              "valid_until": {
+                "value": "06/02/2026",
+                "normalized_value": "06/02/2026",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "not_before_issue",
+                  "not_expired_flagged"
+                ],
+                "errors": [],
+                "original_extracted_value": "06/02/2026",
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "ABHAR BREZA",
+                "normalized_value": "ABHAR BREZA",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "ABHAR BREZA",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": null,
+                "normalized_value": null,
+                "status": null,
+                "confidence": 0.0,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "address": {
+                "value": "Vihar, Delhi 110063",
+                "normalized_value": "Vihar, Delhi 110063",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Vihar, Delhi 110063",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "dl_number": {
+                "value": "DL-0420110194664",
+                "normalized_value": "DL-0420110194664",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "state_code_prefix",
+                  "length_10_16"
+                ],
+                "errors": [],
+                "original_extracted_value": "DL-0420110194664",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "09/02/1976",
+                "normalized_value": "09/02/1976",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "min_age_18"
+                ],
+                "errors": [],
+                "original_extracted_value": "09/02/1976",
+                "original_extracted_confidence": 0.9
+              },
+              "issue_date": {
+                "value": "01/03/2011",
+                "normalized_value": "01/03/2011",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "not_future"
+                ],
+                "errors": [],
+                "original_extracted_value": "01/03/2011",
+                "original_extracted_confidence": 0.9
+              },
+              "valid_until": {
+                "value": "06/02/2026",
+                "normalized_value": "06/02/2026",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "not_before_issue",
+                  "not_expired_flagged"
+                ],
+                "errors": [],
+                "original_extracted_value": "06/02/2026",
+                "original_extracted_confidence": 0.9
+              },
+              "name": {
+                "value": "ABHAR BREZA",
+                "normalized_value": "ABHAR BREZA",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "ABHAR BREZA",
+                "original_extracted_confidence": 0.9
+              },
+              "fathers_name": {
+                "value": null,
+                "normalized_value": null,
+                "status": null,
+                "confidence": 0.0,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": null,
+                "original_extracted_confidence": 0.0
+              },
+              "address": {
+                "value": "Vihar, Delhi 110063",
+                "normalized_value": "Vihar, Delhi 110063",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Vihar, Delhi 110063",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.002
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "965ea663-1a90-49f7-8948-10ce354c4c93",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.042
+      }
+    }
+  }
+}

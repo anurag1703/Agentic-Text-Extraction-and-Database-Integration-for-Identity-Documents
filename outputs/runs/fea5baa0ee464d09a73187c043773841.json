@@ -1,0 +1,701 @@
+{
+  "trace_id": "fea5baa0ee464d09a73187c043773841",
+  "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PROPOSER ADDRESS PROOF.pdf",
+  "start_time": "2026-01-20T10:11:46Z",
+  "stages": {
+    "preprocess": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "pdf_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\id_docs_pdfs\\PROPOSER ADDRESS PROOF.pdf",
+        "pages": [
+          {
+            "image_array": "[[[255 255 254]\n  [255 255 253]\n  [254 254 251]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 253]]\n\n [[255 255 254]\n  [254 254 252]\n  [254 255 251]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 254]]\n\n [[255 255 254]\n  [254 254 252]\n  [253 254 250]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 253]]\n\n ...\n\n [[254 255 255]\n  [253 254 254]\n  [252 253 253]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]]",
+            "metadata": {
+              "original_format": "RGB",
+              "processed_format": "RGB",
+              "dimensions": [
+                1024,
+                741
+              ],
+              "quality_score": 0.9283,
+              "enhancements_applied": [
+                "cropped_padding_(11, 80, 1399, 1999)",
+                "rotated_90_ccw",
+                "resized_to_1024x741"
+              ],
+              "processing_time": 0.4938,
+              "page_number": 1,
+              "raw_quality_metrics": {
+                "blur_variance": 837.7840801183701,
+                "brightness_mean": 143.04459767206478,
+                "contrast_std": 57.423223060924556,
+                "blur_variance_final": 837.7840801183701,
+                "brightness_mean_final": 143.04459767206478,
+                "contrast_std_final": 57.423223060924556
+              }
+            },
+            "image_path": "C:\\Users\\410482\\Desktop\\id-document-processor1\\outputs\\preprocessed\\PROPOSER ADDRESS PROOF_page_1.png"
+          }
+        ],
+        "pages_summary": [
+          {
+            "page_index": 0,
+            "width": 1024,
+            "height": 741,
+            "quality": {},
+            "rotation_applied": false,
+            "crop_info": null
+          }
+        ],
+        "metrics": {
+          "num_pages": 1,
+          "warnings": [],
+          "avg_width": 1024.0,
+          "avg_height": 741.0
+        },
+        "timing": {
+          "elapsed_s": 1.487
+        }
+      },
+      "elapsed_s": 1.487,
+      "attempts": 1
+    },
+    "classify": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "incomplete",
+          "summary": {},
+          "pages": [
+            {
+              "page_index": null,
+              "predicted_class": "aadhar_front",
+              "confidence": 0.9432284832000732,
+              "bbox": null
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "AADHAR_94847628c51b",
+              "document_type": "aadhar",
+              "pages": [
+                {
+                  "page_number": -1,
+                  "predicted_class": "aadhar_front",
+                  "confidence": 0.9432284832000732,
+                  "processing_time": 1.4594274000046425,
+                  "document_type": "aadhar",
+                  "side": "front",
+                  "image_array": "[[[254 255 255]\n  [253 255 255]\n  [251 254 254]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [253 255 255]]\n\n [[254 255 255]\n  [252 254 254]\n  [251 255 254]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [254 255 255]]\n\n [[254 255 255]\n  [252 254 254]\n  [250 254 253]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [253 255 255]]\n\n ...\n\n [[255 255 254]\n  [254 254 253]\n  [253 253 252]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]]",
+                  "metadata": {
+                    "metadata": {
+                      "original_format": "RGB",
+                      "processed_format": "RGB",
+                      "dimensions": [
+                        1024,
+                        741
+                      ],
+                      "quality_score": 0.9283,
+                      "enhancements_applied": [
+                        "cropped_padding_(11, 80, 1399, 1999)",
+                        "rotated_90_ccw",
+                        "resized_to_1024x741"
+                      ],
+                      "processing_time": 0.4938,
+                      "page_number": 1,
+                      "raw_quality_metrics": {
+                        "blur_variance": 837.7840801183701,
+                        "brightness_mean": 143.04459767206478,
+                        "contrast_std": 57.423223060924556,
+                        "blur_variance_final": 837.7840801183701,
+                        "brightness_mean_final": 143.04459767206478,
+                        "contrast_std_final": 57.423223060924556
+                      }
+                    }
+                  },
+                  "_trusted": true
+                }
+              ],
+              "confidence": null
+            }
+          ],
+          "timing": {
+            "elapsed_s": 4.07
+          }
+        }
+      },
+      "elapsed_s": 4.071,
+      "attempts": 1
+    },
+    "extract": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "documents": [
+          {
+            "document_id": "AADHAR_94847628c51b",
+            "document_type": "aadhar",
+            "fields": {
+              "uid_number": "879155004156",
+              "name": "Parmar Bahadur",
+              "date_of_birth": "17/01/1966",
+              "gender": "MALE"
+            },
+            "confidences": {
+              "uid_number": 0.9,
+              "name": 0.9,
+              "date_of_birth": 0.9,
+              "gender": 0.9
+            },
+            "extracted_data": {
+              "fields": {
+                "uid_number": "879155004156",
+                "name": "Parmar Bahadur",
+                "date_of_birth": "17/01/1966",
+                "gender": "MALE"
+              },
+              "confidence_scores": {
+                "uid_number": 0.9,
+                "name": 0.9,
+                "date_of_birth": 0.9,
+                "gender": 0.9
+              },
+              "completeness_score": 0.9,
+              "validation_errors": []
+            },
+            "completeness_score": 0.9,
+            "validation_errors": [],
+            "processing_metadata": {
+              "extraction_time": 24.5185,
+              "model_used": "qwen2.5vl:3b",
+              "retry_attempts": 4,
+              "enhancements_applied": []
+            },
+            "raw": null
+          }
+        ],
+        "timing": {
+          "elapsed_s": 24.525
+        },
+        "debug": null
+      },
+      "elapsed_s": 24.602,
+      "attempts": 1
+    },
+    "validate": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "result": {
+          "status": "unknown",
+          "documents": [
+            {
+              "document_id": "AADHAR_94847628c51b",
+              "document_type": "aadhar",
+              "validation_status": "APPROVED",
+              "field_statuses": {
+                "uid_number": {
+                  "value": "879155004156",
+                  "normalized_value": "879155004156",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "12digits",
+                    "verhoeff",
+                    "non_sequential"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "879155004156",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/01/1966",
+                  "normalized_value": "17/01/1966",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/01/1966",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "MALE",
+                  "normalized_value": "MALE",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "allowed_values:MALE/FEMALE/OTHER"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "MALE",
+                  "original_extracted_confidence": 0.9
+                },
+                "pin_code": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "6digits",
+                    "first_digit_not_zero",
+                    "pin_range"
+                  ],
+                  "errors": [
+                    "pin_missing"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": null
+                },
+                "state": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "state_list_normalize"
+                  ],
+                  "errors": [
+                    "state_not_normalized_or_invalid"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": null
+                },
+                "name": {
+                  "value": "Parmar Bahadur",
+                  "normalized_value": "Parmar Bahadur",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Parmar Bahadur",
+                  "original_extracted_confidence": 0.9
+                }
+              },
+              "validated_fields": {
+                "uid_number": {
+                  "value": "879155004156",
+                  "normalized_value": "879155004156",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "12digits",
+                    "verhoeff",
+                    "non_sequential"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "879155004156",
+                  "original_extracted_confidence": 0.9
+                },
+                "date_of_birth": {
+                  "value": "17/01/1966",
+                  "normalized_value": "17/01/1966",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "date_parse_ddmmyyyy",
+                    "age_range"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "17/01/1966",
+                  "original_extracted_confidence": 0.9
+                },
+                "gender": {
+                  "value": "MALE",
+                  "normalized_value": "MALE",
+                  "status": "VALID",
+                  "confidence": 0.9,
+                  "validation_rules": [
+                    "allowed_values:MALE/FEMALE/OTHER"
+                  ],
+                  "errors": [],
+                  "original_extracted_value": "MALE",
+                  "original_extracted_confidence": 0.9
+                },
+                "pin_code": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "6digits",
+                    "first_digit_not_zero",
+                    "pin_range"
+                  ],
+                  "errors": [
+                    "pin_missing"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": null
+                },
+                "state": {
+                  "value": null,
+                  "normalized_value": null,
+                  "status": "INVALID",
+                  "confidence": 0.0,
+                  "validation_rules": [
+                    "state_list_normalize"
+                  ],
+                  "errors": [
+                    "state_not_normalized_or_invalid"
+                  ],
+                  "original_extracted_value": null,
+                  "original_extracted_confidence": null
+                },
+                "name": {
+                  "value": "Parmar Bahadur",
+                  "normalized_value": "Parmar Bahadur",
+                  "status": null,
+                  "confidence": 0.9,
+                  "validation_rules": [],
+                  "errors": [],
+                  "original_extracted_value": "Parmar Bahadur",
+                  "original_extracted_confidence": 0.9
+                }
+              }
+            }
+          ],
+          "timing": {
+            "elapsed_s": 0.002
+          },
+          "errors": null
+        }
+      },
+      "elapsed_s": 0.004,
+      "attempts": 1
+    },
+    "store": {
+      "success": true,
+      "result": {
+        "status": "success",
+        "stored": 1,
+        "validation_id": "5ffd714e-145d-40eb-9caf-582152f524be",
+        "errors": [],
+        "timing": {
+          "elapsed_s": 0.048
+        }
+      },
+      "elapsed_s": 0.048,
+      "attempts": 1
+    }
+  },
+  "errors": [],
+  "status": "success",
+  "end_time": "2026-01-20T10:12:16Z",
+  "timing": {
+    "elapsed_s": 30.241
+  },
+  "outputs": {
+    "preprocess": {
+      "metrics": {
+        "num_pages": 1,
+        "warnings": [],
+        "avg_width": 1024.0,
+        "avg_height": 741.0
+      },
+      "num_pages": 1
+    },
+    "classify_summary": {
+      "status": "incomplete",
+      "summary": {},
+      "pages": [
+        {
+          "page_index": null,
+          "predicted_class": "aadhar_front",
+          "confidence": 0.9432284832000732,
+          "bbox": null
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "AADHAR_94847628c51b",
+          "document_type": "aadhar",
+          "pages": [
+            {
+              "page_number": -1,
+              "predicted_class": "aadhar_front",
+              "confidence": 0.9432284832000732,
+              "processing_time": 1.4594274000046425,
+              "document_type": "aadhar",
+              "side": "front",
+              "image_array": "[[[254 255 255]\n  [253 255 255]\n  [251 254 254]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [253 255 255]]\n\n [[254 255 255]\n  [252 254 254]\n  [251 255 254]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [254 255 255]]\n\n [[254 255 255]\n  [252 254 254]\n  [250 254 253]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [253 255 255]]\n\n ...\n\n [[255 255 254]\n  [254 254 253]\n  [253 253 252]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]]",
+              "metadata": {
+                "metadata": {
+                  "original_format": "RGB",
+                  "processed_format": "RGB",
+                  "dimensions": [
+                    1024,
+                    741
+                  ],
+                  "quality_score": 0.9283,
+                  "enhancements_applied": [
+                    "cropped_padding_(11, 80, 1399, 1999)",
+                    "rotated_90_ccw",
+                    "resized_to_1024x741"
+                  ],
+                  "processing_time": 0.4938,
+                  "page_number": 1,
+                  "raw_quality_metrics": {
+                    "blur_variance": 837.7840801183701,
+                    "brightness_mean": 143.04459767206478,
+                    "contrast_std": 57.423223060924556,
+                    "blur_variance_final": 837.7840801183701,
+                    "brightness_mean_final": 143.04459767206478,
+                    "contrast_std_final": 57.423223060924556
+                  }
+                }
+              },
+              "_trusted": true
+            }
+          ],
+          "confidence": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 4.07
+      }
+    },
+    "extraction_summary": {
+      "status": "success",
+      "documents": [
+        {
+          "document_id": "AADHAR_94847628c51b",
+          "document_type": "aadhar",
+          "fields": {
+            "uid_number": "879155004156",
+            "name": "Parmar Bahadur",
+            "date_of_birth": "17/01/1966",
+            "gender": "MALE"
+          },
+          "confidences": {
+            "uid_number": 0.9,
+            "name": 0.9,
+            "date_of_birth": 0.9,
+            "gender": 0.9
+          },
+          "extracted_data": {
+            "fields": {
+              "uid_number": "879155004156",
+              "name": "Parmar Bahadur",
+              "date_of_birth": "17/01/1966",
+              "gender": "MALE"
+            },
+            "confidence_scores": {
+              "uid_number": 0.9,
+              "name": 0.9,
+              "date_of_birth": 0.9,
+              "gender": 0.9
+            },
+            "completeness_score": 0.9,
+            "validation_errors": []
+          },
+          "completeness_score": 0.9,
+          "validation_errors": [],
+          "processing_metadata": {
+            "extraction_time": 24.5185,
+            "model_used": "qwen2.5vl:3b",
+            "retry_attempts": 4,
+            "enhancements_applied": []
+          },
+          "raw": null
+        }
+      ],
+      "timing": {
+        "elapsed_s": 24.525
+      },
+      "debug": null
+    },
+    "validation_summary": {
+      "status": "success",
+      "result": {
+        "status": "unknown",
+        "documents": [
+          {
+            "document_id": "AADHAR_94847628c51b",
+            "document_type": "aadhar",
+            "validation_status": "APPROVED",
+            "field_statuses": {
+              "uid_number": {
+                "value": "879155004156",
+                "normalized_value": "879155004156",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "12digits",
+                  "verhoeff",
+                  "non_sequential"
+                ],
+                "errors": [],
+                "original_extracted_value": "879155004156",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/01/1966",
+                "normalized_value": "17/01/1966",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/01/1966",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "MALE",
+                "normalized_value": "MALE",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "allowed_values:MALE/FEMALE/OTHER"
+                ],
+                "errors": [],
+                "original_extracted_value": "MALE",
+                "original_extracted_confidence": 0.9
+              },
+              "pin_code": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "6digits",
+                  "first_digit_not_zero",
+                  "pin_range"
+                ],
+                "errors": [
+                  "pin_missing"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": null
+              },
+              "state": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "state_list_normalize"
+                ],
+                "errors": [
+                  "state_not_normalized_or_invalid"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": null
+              },
+              "name": {
+                "value": "Parmar Bahadur",
+                "normalized_value": "Parmar Bahadur",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Parmar Bahadur",
+                "original_extracted_confidence": 0.9
+              }
+            },
+            "validated_fields": {
+              "uid_number": {
+                "value": "879155004156",
+                "normalized_value": "879155004156",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "12digits",
+                  "verhoeff",
+                  "non_sequential"
+                ],
+                "errors": [],
+                "original_extracted_value": "879155004156",
+                "original_extracted_confidence": 0.9
+              },
+              "date_of_birth": {
+                "value": "17/01/1966",
+                "normalized_value": "17/01/1966",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "date_parse_ddmmyyyy",
+                  "age_range"
+                ],
+                "errors": [],
+                "original_extracted_value": "17/01/1966",
+                "original_extracted_confidence": 0.9
+              },
+              "gender": {
+                "value": "MALE",
+                "normalized_value": "MALE",
+                "status": "VALID",
+                "confidence": 0.9,
+                "validation_rules": [
+                  "allowed_values:MALE/FEMALE/OTHER"
+                ],
+                "errors": [],
+                "original_extracted_value": "MALE",
+                "original_extracted_confidence": 0.9
+              },
+              "pin_code": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "6digits",
+                  "first_digit_not_zero",
+                  "pin_range"
+                ],
+                "errors": [
+                  "pin_missing"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": null
+              },
+              "state": {
+                "value": null,
+                "normalized_value": null,
+                "status": "INVALID",
+                "confidence": 0.0,
+                "validation_rules": [
+                  "state_list_normalize"
+                ],
+                "errors": [
+                  "state_not_normalized_or_invalid"
+                ],
+                "original_extracted_value": null,
+                "original_extracted_confidence": null
+              },
+              "name": {
+                "value": "Parmar Bahadur",
+                "normalized_value": "Parmar Bahadur",
+                "status": null,
+                "confidence": 0.9,
+                "validation_rules": [],
+                "errors": [],
+                "original_extracted_value": "Parmar Bahadur",
+                "original_extracted_confidence": 0.9
+              }
+            }
+          }
+        ],
+        "timing": {
+          "elapsed_s": 0.002
+        },
+        "errors": null
+      }
+    },
+    "store_summary": {
+      "status": "success",
+      "stored": 1,
+      "validation_id": "5ffd714e-145d-40eb-9caf-582152f524be",
+      "errors": [],
+      "timing": {
+        "elapsed_s": 0.048
+      }
+    }
+  }
+}
