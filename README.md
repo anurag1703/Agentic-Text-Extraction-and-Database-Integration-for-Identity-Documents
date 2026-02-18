@@ -1,4 +1,4 @@
-# ID Document Processor
+# Agentic Text Extraction and Database Integration for Identity Documents
 
 End-to-end PDF document processing pipeline: preprocessing → classification → vision extraction → validation → storage.
 
