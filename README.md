@@ -4,7 +4,7 @@ End-to-end PDF document processing pipeline: preprocessing → classification �
 
 ## Overview
 - Purpose: Process ID-style PDFs and extract structured data through a configurable pipeline.
-- Entry point: `tools/orchestrator.py` — a CLI wrapper that runs the full pipeline for a single PDF.
+- Entry point: `agents/orchestrator_agent.py` — a CLI wrapper that runs the full pipeline for a single PDF.
 
 ## Prerequisites
 - Python 3.11 or newer
@@ -50,7 +50,7 @@ If `pdf2image` complains about missing `poppler`, add `poppler/bin` to your `PAT
 Basic run (single PDF):
 ```bash
 set SAMPLE_ORCH_PDF= path of your PDF.
-python tools/orchestrator.py
+python agents/orchestrator_agent.py
 ```
 
 
